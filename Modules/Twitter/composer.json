@@ -1,0 +1,39 @@
+{
+    "name": "freescout/twitter",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Twitter\\Providers\\TwitterServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "require": {
+        "botman/botman": "2.6.1",
+        "botman/driver-twitter": "1.0.0",
+        "composer/ca-bundle": "1.2.9"
+    },
+    "replace": {
+        "psr/container": "*",
+        "symfony/http-foundation": "*",
+        "doctrine/cache": "*",
+        "mockery/mockery": "*",
+        "phpunit/phpunit": "*",
+        "symfony/polyfill-mbstring": "*",
+        "symfony/var-dumper": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Twitter\\": ""
+        }
+    }
+}

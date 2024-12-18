@@ -1,0 +1,18 @@
+{
+    ":person marked as :status_name": "отметил(а) как :status_name",
+    ":person marked as :status_name conversation #:conversation_number": "отметил(а) как :status_name тикет #:conversation_number",
+    "Blacklist Customer": "Внести клиента в чёрный список",
+    "Blacklisted": "В чёрном списке",
+    "Filter Using Spam-Filtering Algorithm & Learning": "Фильтрация спама с помощью специальных алгоритмов и обучения",
+    "Filter by Body": "Фильтрация по тексту письма",
+    "Filter by Subject": "Фильтрация по теме письма",
+    "Learning Memory": "Память обучения",
+    "Learning memory has been reset for the mailbox": "Память для обучения была сброшена для почтового ящика",
+    "Reset Learning Memory of the Selected Mailbox": "Сброс памяти обучения выбранного почтового ящика",
+    "Spam Filter": "Спам-фильтр",
+    "UnBlacklist": "Убрать из чёрного списка",
+    "UnWhitelist": "Убрать из белого списка",
+    "When you are marking conversations as spam or non-spam the Spam Filter learns from your actions and stores the information in the learning memory for each mailbox.": "Когда вы помечаете тикеты как спам или не-спам, фильтр обучается и сохраняет информацию в памяти обучения для каждого почтового ящика.",
+    "Whitelist Customer": "Внести клиента в белый список",
+    "Whitelisted": "В белом списке"
+}

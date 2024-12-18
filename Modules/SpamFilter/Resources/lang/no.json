@@ -1,0 +1,17 @@
+{
+    "Blacklist Customer": "Svartelist kunde",
+    "Blacklisted": "Svartelistet",
+    "Filter Using Spam-Filtering Algorithm & Learning": "Filtrer ved hjelp av spam-filtreringsalgoritme og læring",
+    "Filter by Body": "Filtrer etter brødtekst",
+    "Filter by Subject": "Filtrer etter emne",
+    "Learning Memory": "Læringsminne",
+    "Learning memory has been reset for the mailbox": "Læringsminnet er tilbakestilt for postkassen",
+    "One phrase per line": "En setning per linje",
+    "Reset Learning Memory of the Selected Mailbox": "Tilbakestill læringsminnet for den valgte postkassen",
+    "Spam Filter": "Spamfilter",
+    "UnBlacklist": "AvSvarteliste",
+    "UnWhitelist": "AvHviteliste",
+    "When you are marking conversations as spam or non-spam the Spam Filter learns from your actions and stores the information in the learning memory for each mailbox.": "Når du merker samtaler som spam eller ikke-spam, lærer spamfilteret av handlingene dine og lagrer informasjonen i læringsminnet for hver postboks.",
+    "Whitelist Customer": "Hviteliste kunde",
+    "Whitelisted": "Hvitelistet"
+}

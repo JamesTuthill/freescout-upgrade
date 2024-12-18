@@ -1,0 +1,16 @@
+{
+    "Apply": "Appliquer",
+    "Current date & time": "Date et heure courante",
+    "Schedule": "Programmé",
+    "Schedule Sending On": "Programmer l'envoi le",
+    "Schedule send": "Envoi programmé",
+    "Send In": "Envoyer dans",
+    "Send Now": "Envoyer maintenant",
+    "Sending scheduled on :date": "Envoi programmé le :date",
+    "day(s)": "jour(s)",
+    "hour(s)": "heure(s)",
+    "minute(s)": "minute(s)",
+    "month(s)": "mois",
+    "week(s)": "semaine(s)",
+    "year(s)": "année(s)"
+}

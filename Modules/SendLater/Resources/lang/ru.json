@@ -1,0 +1,16 @@
+{
+    "Apply": "Применить",
+    "Current date & time": "Текущая дата и время",
+    "Schedule": "Запланировать",
+    "Schedule Sending On": "Запланировать отправку на",
+    "Schedule send": "Отложенная отправка",
+    "Send In": "Отправить через",
+    "Send Now": "Отправить сейчас",
+    "Sending scheduled on :date": "Отпрака запланирована на :date",
+    "day(s)": "дней",
+    "hour(s)": "часов",
+    "minute(s)": "минут",
+    "month(s)": "месяцев",
+    "week(s)": "недель",
+    "year(s)": "лет"
+}

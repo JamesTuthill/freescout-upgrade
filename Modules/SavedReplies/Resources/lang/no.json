@@ -1,0 +1,18 @@
+{
+    "A Saved Reply with this name already exists for this mailbox.": "Et lagret svar med dette navnet finnes allerede for denne postboksen.",
+    "A saved reply is a snippet of text that can be quickly added to the editor when replying to a customer.": "Et lagret svar er en tekstbit som raskt kan legges til i editoren når du svarer en kunde.",
+    "Category": "Kategori",
+    "Create a New Saved Reply": "Opprett et nytt lagret svar",
+    "Created new Saved Reply": "Opprettet nytt lagret svar",
+    "Delete this Saved Reply?": "Vil du slette dette lagrede svaret?",
+    "Deleted Saved Reply": "Slettet lagret svar",
+    "New Saved Reply": "Nytt lagret svar",
+    "Save Reply": "Lagre svar",
+    "Save This Reply": "Lagre dette svaret",
+    "Save time with saved replies!": "Spar tid med lagrede svar!",
+    "Saved reply name is required": "Lagret svarnavn kreves",
+    "Saved reply not found": "Finner ikke lagret svar",
+    "Saved reply text is required": "Lagret svartekst kreves",
+    "The text is hidden as this saved reply contains nested saved replies": "Teksten er skjult siden dette lagrede svaret inneholder innleirede lagrede svar",
+    "Updated Saved Reply": "Oppdatert lagret svar"
+}

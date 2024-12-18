@@ -1,0 +1,28 @@
+.mi-icon {
+    border-radius: 50%;
+}
+.dash-card .mi-icon {
+    position: absolute;
+    right: 14px;
+    width: 32px;
+    height: 32px;
+}
+.dash-card h3,
+.dash-card .dash-card-link {
+    padding-right: 50px!important;
+}
+.dropdown-menu .mi-icon {
+	width: 18px;
+	height: 18px;
+	margin-right: 9px;
+}
+.sidebar-title > .mi-icon {
+	position: absolute;
+    width: 32px;
+    right: -10px;
+    height: 32px;
+    top: 8px;
+}
+.sidebar-title.sidebar-no-email > .mi-icon {
+    top: 0;
+}

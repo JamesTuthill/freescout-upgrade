@@ -1,0 +1,18 @@
+{
+    "A Saved Reply with this name already exists for this mailbox.": "具有此名称的回复模板已存在预此邮箱",
+    "A saved reply is a snippet of text that can be quickly added to the editor when replying to a customer.": "当回复顾可时，回复模板是一个文本片段可以被迅速的添加进编辑器。",
+    "Category": "分类",
+    "Create a New Saved Reply": "创建新的回复模板",
+    "Created new Saved Reply": "回复模板已创建",
+    "Delete this Saved Reply?": "删除此回复模板？",
+    "Deleted Saved Reply": "回复模板已删除",
+    "New Saved Reply": "新回复模板",
+    "Save Reply": "保存回复",
+    "Save This Reply": "保存此回复",
+    "Save time with saved replies!": "使用回复模板节省时间",
+    "Saved reply name is required": "回复模板名称是必须的",
+    "Saved reply not found": "没找到回复模板",
+    "Saved reply text is required": "回复模板文本是必须的",
+    "The text is hidden as this saved reply contains nested saved replies": "由于此回复模板包含嵌套的回复模板，因此文本被隐藏",
+    "Updated Saved Reply": "回复模板已更新"
+}

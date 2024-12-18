@@ -1,0 +1,18 @@
+{
+    "A Saved Reply with this name already exists for this mailbox.": "Tälle postilaatikolle on jo olemassa Tallennettu vastaus tällä nimellä.",
+    "A saved reply is a snippet of text that can be quickly added to the editor when replying to a customer.": "Tallennettu vastaus on tekstinpätkä, joka voidaan lisätä nopeasti editoriin, kun asiakkaalle vastataan.",
+    "Category": "Kategoria",
+    "Create a New Saved Reply": "Luo uusi tallennettu vastaus",
+    "Created new Saved Reply": "Uusi tallennettu vastaus luotu",
+    "Delete this Saved Reply?": "Poista tämä tallennettu vastaus?",
+    "Deleted Saved Reply": "Tallennettu vastaus poistettu",
+    "New Saved Reply": "Uusi tallennettu vastaus",
+    "Save Reply": "Tallenna vastaus",
+    "Save This Reply": "Tallenna tämä vastaus",
+    "Save time with saved replies!": "Säästä aikaa tallennetuilla vastauksilla!",
+    "Saved reply name is required": "Tallennetun vastauksen nimi vaaditaan",
+    "Saved reply not found": "Tallennettua vastausta ei löydy",
+    "Saved reply text is required": "Tallennetun vastauksen teksti vaaditaan",
+    "The text is hidden as this saved reply contains nested saved replies": "Teksti on piilotettu, koska tämä tallennettu vastaus sisältää sisäkkäisiä tallennettuja vastauksia.",
+    "Updated Saved Reply": "Tallennettu vastaus päivitetty"
+}

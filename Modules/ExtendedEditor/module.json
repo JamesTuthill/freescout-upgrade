@@ -1,0 +1,22 @@
+{
+    "name": "Extended Editor",
+    "alias": "extendededitor",
+    "description": "Add new formatting buttons to the editor: headers, code, quote, tables, color, etc.",
+    "version": "1.0.2",
+    "detailsUrl": "https://freescout.net/module/extended-editor/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.6.6",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\ExtendedEditor\\Providers\\ExtendedEditorServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

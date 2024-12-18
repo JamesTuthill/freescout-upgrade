@@ -1,0 +1,7 @@
+{
+    "Could not create folder: %folder%": "Pasta não pôde ser criada: %folder%",
+    "Could not save icon - check App Logs.": "Não foi possível salvar o ícone - verifique os registros do aplicativo.",
+    "Delete Icon": "Apagar icone",
+    "Error occured processing the image - make sure that PHP GD extension is enabled.": "Ocorreu um erro ao processar a imagem - certifique-se de que a extensão PHP GD esteja habilitada.",
+    "Icon": "Icone"
+}

@@ -1,0 +1,16 @@
+{
+    "Apply": "Käytä",
+    "Current date & time": "Nykyinen päivämäärä ja kellonaika",
+    "Schedule": "Aikataulu",
+    "Schedule Sending On": "Aikataulutettu lähetys päällä",
+    "Schedule send": "Aikatauluta lähetys",
+    "Send In": "Lähetä",
+    "Send Now": "Lähetä heti",
+    "Sending scheduled on :date": "Lähetys ajoitettu :päivänä",
+    "day(s)": "päivä(t)",
+    "hour(s)": "tunti(tunnit)",
+    "minute(s)": "Minuutti(minuutit)",
+    "month(s)": "Kuukausi(kuukaudet)",
+    "week(s)": "Viikko(viikot)",
+    "year(s)": "Vuosi(vuodet)"
+}

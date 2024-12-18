@@ -1,0 +1,15 @@
+{
+    "Add": "Добавить",
+    "Add Checklist": "Добавить чек-лист",
+    "Add Task": "Добавить задачу",
+    "Conversation with #:number number not found": "Тикет №:number не найден",
+    "Enter tasks (one per line)": "Введите задачи (одна на строку)",
+    "Link": "Привязать",
+    "Link To Conversation": "Привязать к тикету",
+    "Pick Conversation": "Выберите тикет",
+    "Task description": "Описание задачи",
+    "Task not found": "Задача не найдена",
+    "This conversation is linked to the following conversation(s):": "Этот тикет связан со следующим тикетом:",
+    "Unlink From Conversation": "Отвязать от тикета",
+    "You don't have access to the #:number conversation": "У Вас нет доступа к тикету №:number"
+}

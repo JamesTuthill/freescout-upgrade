@@ -1,0 +1,18 @@
+{
+    "A Saved Reply with this name already exists for this mailbox.": "Une réponse enregistrée portant ce nom existe déjà pour cette boîte aux lettres.",
+    "A saved reply is a snippet of text that can be quickly added to the editor when replying to a customer.": "Une réponse sauvegardée est un extrait de texte qui peut être ajouté rapidement à l'éditeur lorsque vous répondez à un client.",
+    "Category": "Catégorie",
+    "Create a New Saved Reply": "Créer une nouvelle réponse enregistrée",
+    "Created new Saved Reply": "Créé une nouvelle réponse enregistrée",
+    "Delete this Saved Reply?": "Supprimer cette réponse enregistrée ?",
+    "Deleted Saved Reply": "Réponse enregistrée supprimée",
+    "New Saved Reply": "Nouvelle réponse enregistrée",
+    "Save Reply": "Sauvegarder la réponse",
+    "Save This Reply": "Enregistrer cette réponse",
+    "Save time with saved replies!": "Gagnez du temps avec les réponses enregistrées !",
+    "Saved reply name is required": "Le nom de la réponse sauvegardée est obligatoire",
+    "Saved reply not found": "Réponse enregistrée non trouvée",
+    "Saved reply text is required": "Le texte de la réponse sauvegardée est obligatoire",
+    "The text is hidden as this saved reply contains nested saved replies": "Le texte est masqué car cette réponse enregistrée contient des réponses enregistrées imbriquées.",
+    "Updated Saved Reply": "Réponse sauvegardée mise à jour"
+}

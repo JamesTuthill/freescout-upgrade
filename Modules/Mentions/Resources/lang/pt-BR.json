@@ -1,0 +1,5 @@
+{
+    ":person is @mentioned in a conversation": "foi @mentioned uma conversa",
+    ":person mentioned you in a note on #:conversation_number": "mencionou você em uma nota no #:conversation_number",
+    "I'm @mentioned in a conversation": "Fui @mentioned em uma conversa"
+}

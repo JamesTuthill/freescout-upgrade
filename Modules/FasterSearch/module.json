@@ -1,0 +1,24 @@
+{
+    "name": "Faster Search",
+    "alias": "fastersearch",
+    "description": "Speed up FreeScout search with Meilisearch!",
+    "version": "1.0.14",
+    "detailsUrl": "https://freescout.net/module/faster-search/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.8.110",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\FasterSearch\\Providers\\FasterSearchServiceProvider"
+    ],
+    "aliases": {
+        "FasterSearch": "Modules\\FasterSearch\\Providers\\FasterSearchServiceProvider"
+    },
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

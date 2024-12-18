@@ -1,0 +1,1 @@
+<li class="{{ \App\Misc\Helper::menuSelectedHtml('wallboards') }}"><a href="{{ route('wallboards.show') }}">{{ __('Wallboards') }}</a></li>

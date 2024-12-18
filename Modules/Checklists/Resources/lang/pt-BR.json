@@ -1,0 +1,15 @@
+{
+    "Add": "Adicionar",
+    "Add Checklist": "Adicionar Lista de Verificação",
+    "Add Task": "Adicionar Tarefa",
+    "Conversation with #:number number not found": "A conversa com o número #:number não foi encontrada",
+    "Enter tasks (one per line)": "Digite as tarefas (uma por linha)",
+    "Link": "Link",
+    "Link To Conversation": "Link para Conversa",
+    "Pick Conversation": "Escolher Conversa",
+    "Task description": "Descrição da Tarefa",
+    "Task not found": "Tarefa não encontrada",
+    "This conversation is linked to the following conversation(s):": "Esta conversa está vinculada à(s) seguinte(s) conversa(s):",
+    "Unlink From Conversation": "Desvincular da Conversa",
+    "You don't have access to the #:number conversation": "Você não tem acesso à conversa #:number.\""
+}

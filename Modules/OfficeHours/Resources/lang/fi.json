@@ -1,0 +1,13 @@
+{
+    "Auto replies will be sent outside of the specified office hours.": "Automaattiset vastaukset lähetetään määritettyjen toimistoaikojen ulkopuolella.",
+    "Day off": "Vapaapäivä",
+    "Friday": "Perjantai",
+    "Monday": "Maanantai",
+    "Office Hours": "Toimiston aukioloajat",
+    "Office hours are based on your :%a_begin%company timezone:%a_end%.": "Toimiston aukioloajat perustuvat :%a_begin%yrityksen aikavyöhykkeeseen:%a_end%.",
+    "Saturday": "Lauantai",
+    "Sunday": "Sunnuntai",
+    "Thursday": "Torstai",
+    "Tuesday": "Tiistai",
+    "Wednesday": "Keskiviikko"
+}

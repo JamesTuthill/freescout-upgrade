@@ -1,0 +1,22 @@
+{
+    "name": "Embed Images",
+    "alias": "embedimages",
+    "description": "Embed images into the body of emails sent to customers!",
+    "version": "1.0.3",
+    "detailsUrl": "https://freescout.net/module/embed-images/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.8.24",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\EmbedImages\\Providers\\EmbedImagesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

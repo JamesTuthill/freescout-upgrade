@@ -1,0 +1,25 @@
+{
+    "name": "freescout/globalmailbox",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\GlobalMailbox\\Providers\\GlobalMailboxServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\GlobalMailbox\\": ""
+        }
+    }
+}

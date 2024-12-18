@@ -1,0 +1,7 @@
+{
+    "Icon": "Ikona",
+    "Delete Icon": "Usuń ikonę",
+    "Error occured processing the image - make sure that PHP GD extension is enabled.": "Wystąpił błąd podczas przetwarzania obrazu - upewnij się, że rozszerzenie PHP GD jest włączone.",
+    "Could not create folder: %folder%": "Could not create folder: %folder%",
+    "Could not save icon - check App Logs.": "Nie można zapisać ikony - sprawdź dzienniki aplikacji."
+}

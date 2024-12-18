@@ -1,0 +1,23 @@
+.followers-item {
+    display: block!important;
+}
+.followers-item:focus {
+    text-decoration: none;
+}
+.followers-item:hover {
+    text-decoration: none;
+    background-color: #f1f3f5;
+}
+.followers-item .glyphicon,
+.followers-item:hover .glyphicon {
+    color: #dfe3e7;
+}
+.followers-item:hover {
+    color: #2a3b47!important;
+}
+.followers-item.followers-subscribed .glyphicon {
+    color: #93a1af;
+}
+.followers-item.followers-self {
+    cursor: default;
+}

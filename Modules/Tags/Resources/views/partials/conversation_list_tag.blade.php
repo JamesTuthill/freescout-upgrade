@@ -1,0 +1,1 @@
+@if ($tag)<span class="tag tag-c-{{ $tag->getColor() }}" data-tag-url="{{ $tag->getUrl() }}">{{ $tag->name }}</span>@endif

@@ -1,0 +1,17 @@
+{
+    "Blacklist Customer": "Klient z czarnej listy",
+    "Blacklisted": "Na czarnej liście",
+    "Filter Using Spam-Filtering Algorithm & Learning": "Filtruj za pomocą algorytmu i uczenia się filtrowania spamu",
+    "Filter by Body": "Filtruj według treści",
+    "Filter by Subject": "Filtruj według tematu",
+    "Learning Memory": "Uczenie się pamięci",
+    "Learning memory has been reset for the mailbox": "Pamięć nauki została zresetowana dla skrzynki pocztowej",
+    "One phrase per line": "Jedno zdanie w linii",
+    "Reset Learning Memory of the Selected Mailbox": "Zresetuj pamięć uczenia wybranej skrzynki pocztowej",
+    "Spam Filter": "Filtr spamu",
+    "UnBlacklist": "Usuń z czarnej listy",
+    "UnWhitelist": "Usuń z białej listy",
+    "When you are marking conversations as spam or non-spam the Spam Filter learns from your actions and stores the information in the learning memory for each mailbox.": "Gdy oznaczasz konwersacje jako spam lub nie spam, filtr spamu uczy się na podstawie twoich działań i przechowuje informacje w pamięci uczenia się dla każdej skrzynki pocztowej.",
+    "Whitelist Customer": "Klient z białej listy",
+    "Whitelisted": "Na białej liście"
+}

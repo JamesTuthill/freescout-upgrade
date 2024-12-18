@@ -1,0 +1,7 @@
+{
+    "Could not create folder: %folder%": "Kon map %folder% niet aanmaken",
+    "Could not save icon - check App Logs.": "Kon icoon niet opslaan - controleer App-logs.",
+    "Delete Icon": "Verwijder icoon",
+    "Error occured processing the image - make sure that PHP GD extension is enabled.": "Er is een fout opgetreden bij het verwerken van de afbeelding. Zorg ervoor dat de PHP GD-extensie is ingeschakeld.",
+    "Icon": "Icoon"
+}

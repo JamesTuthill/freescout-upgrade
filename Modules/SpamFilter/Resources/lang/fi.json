@@ -1,0 +1,17 @@
+{
+    "Blacklist Customer": "Mustalista-asiakas",
+    "Blacklisted": "Mustalle listalle lisätty",
+    "Filter Using Spam-Filtering Algorithm & Learning": "Suodata käyttämällä roskapostin suodatusta Algorithm & oppiminen",
+    "Filter by Body": "Suodata sisällön mukaan",
+    "Filter by Subject": "Suodata aiheen mukaan",
+    "Learning Memory": "Oppimismuisti",
+    "Learning memory has been reset for the mailbox": "Oppimismuisti on nollattu postilaatikkoa varten.",
+    "One phrase per line": "Yksi lause per rivi",
+    "Reset Learning Memory of the Selected Mailbox": "Valitun postilaatikon oppimismuistin nollaaminen",
+    "Spam Filter": "Roskapostisuodatin",
+    "UnBlacklist": "Poista mustalta listalta",
+    "UnWhitelist": "Poista valkoiselta listalta",
+    "When you are marking conversations as spam or non-spam the Spam Filter learns from your actions and stores the information in the learning memory for each mailbox.": "Kun merkitset keskusteluja roskapostiksi tai muuksi kuin roskapostiksi, roskapostisuodatin oppii toimistasi ja tallentaa tiedot kunkin postilaatikon oppimismuistiin.",
+    "Whitelist Customer": "Valkolista-asiakas",
+    "Whitelisted": "Valkoiselle listalle lisätty"
+}

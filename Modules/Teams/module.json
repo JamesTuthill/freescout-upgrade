@@ -1,0 +1,24 @@
+{
+    "name": "Teams",
+    "alias": "teams",
+    "description": "Organize support agents into Teams!",
+    "version": "1.0.20",
+    "detailsUrl": "https://freescout.net/module/teams/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.8.137",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\Teams\\Providers\\TeamsServiceProvider"
+    ],
+    "aliases": {
+        "Team": "Modules\\Teams\\Providers\\TeamsServiceProvider"
+    },
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

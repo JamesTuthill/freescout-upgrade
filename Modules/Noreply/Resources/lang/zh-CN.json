@@ -1,0 +1,10 @@
+{
+    "Sending to :email email. Are you sure?": "你确定要发送给:email 电子邮件？",
+    "Auto replies will not be sent to the specified noreply emails.": "自动回复将不会被发送给指定的不回复电子邮件。",
+    "Custom Noreply Emails": "自定义不回复电子邮件",
+    "Default Noreply Emails": "默认不回复电子邮件",
+    "Enter email prefixes without @ sign or full email addresses one per line.": "输入电子邮件前缀不带@符号或者全部电子邮件每个一行。",
+    "Noreply Emails": "不回复电子邮件",
+    "Use a dash where you want to allow a dash, underscore or no symbol.": "在您想允许中杠或无符号的地方使用中杠",
+    "Use an asterisk * where you want to allow any number of any symbols.": "在你想允许数量的任何符号的地方使用星号*"
+}

@@ -1,0 +1,18 @@
+{
+    "A Saved Reply with this name already exists for this mailbox.": "Шаблонный ответ с таким именем уже существует для этого почтового ящика.",
+    "A saved reply is a snippet of text that can be quickly added to the editor when replying to a customer.": "Шаблонный ответ — это фрагмент текста, который можно быстро добавить в редактор при ответе клиенту.",
+    "Category": "Категория",
+    "Create a New Saved Reply": "Создать новый шаблонный ответ",
+    "Created new Saved Reply": "Создан новый шаблонный ответ",
+    "Delete this Saved Reply?": "Удалить этот шаблонный ответ?",
+    "Deleted Saved Reply": "Шаблонный ответ удалён",
+    "New Saved Reply": "Новый шаблонный ответ",
+    "Save Reply": "Шаблонный ответ",
+    "Save This Reply": "Сохранить этот ответ",
+    "Save time with saved replies!": "Экономьте время с шаблонными ответами!",
+    "Saved reply name is required": "Необходимо ввести имя шаблонного ответа",
+    "Saved reply not found": "Шаблонный ответ не найден",
+    "Saved reply text is required": "Необходимо ввести текст шаблонного ответа",
+    "The text is hidden as this saved reply contains nested saved replies": "Текст скрыт, так как этот шаблонный ответ содержит вложенные шаблонные ответы",
+    "Updated Saved Reply": "Шаблонный ответ обновлён"
+}

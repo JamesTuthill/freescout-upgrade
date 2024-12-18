@@ -1,0 +1,24 @@
+{
+    "name": "Global Mailbox",
+    "alias": "globalmailbox",
+    "description": "Conversations from all your mailboxes in one place!",
+    "version": "1.0.17",
+    "detailsUrl": "https://freescout.net/module/global-mailbox/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.8.52",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\GlobalMailbox\\Providers\\GlobalMailboxServiceProvider"
+    ],
+    "aliases": {
+        "GlobalMailbox": "Modules\\GlobalMailbox\\Providers\\GlobalMailboxServiceProvider"
+    },
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

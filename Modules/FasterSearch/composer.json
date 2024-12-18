@@ -1,0 +1,25 @@
+{
+    "name": "freescout/fastersearch",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\FasterSearch\\Providers\\FasterSearchServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\FasterSearch\\": ""
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "freescout/mailboxicons",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MailboxIcons\\Providers\\MailboxIconsServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MailboxIcons\\": ""
+        }
+    }
+}

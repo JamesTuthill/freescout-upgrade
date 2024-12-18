@@ -1,0 +1,24 @@
+{
+    "name": "Sender Time Zone",
+    "alias": "sendertimezone",
+    "description": "Know your customers time zone and local time!",
+    "version": "1.0.4",
+    "detailsUrl": "https://freescout.net/module/sender-time-zone/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.8.5",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\SenderTimeZone\\Providers\\SenderTimeZoneServiceProvider"
+    ],
+    "aliases": {
+        "SenderTimeZone": "Modules\\SenderTimeZone\\Providers\\SenderTimeZoneServiceProvider"
+    },
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

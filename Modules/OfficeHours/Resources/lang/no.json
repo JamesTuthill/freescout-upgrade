@@ -1,0 +1,13 @@
+{
+    "Auto replies will be sent outside of the specified office hours.": "Automatiske svar vil bli sendt utenfor angitte kontortider.",
+    "Day off": "Fridag",
+    "Friday": "Fredag",
+    "Monday": "Mandag",
+    "Office Hours": "Kontortider",
+    "Office hours are based on your :%a_begin%company timezone:%a_end%.": "Kontortider er basert på tidssonen til din :%a_begin%bedrift:%a_end%.",
+    "Saturday": "Lørdag",
+    "Sunday": "Søndag",
+    "Thursday": "Torsdag",
+    "Tuesday": "Tirsdag",
+    "Wednesday": "Onsdag"
+}

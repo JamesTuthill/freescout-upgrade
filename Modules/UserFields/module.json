@@ -1,0 +1,24 @@
+{
+    "name": "User Fields",
+    "alias": "userfields",
+    "description": "Add custom fields to users!",
+    "version": "1.0.4",
+    "detailsUrl": "https://freescout.net/module/user-fields/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.8.117",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\UserFields\\Providers\\UserFieldsServiceProvider"
+    ],
+    "aliases": {
+        "UserField": "Modules\\UserFields\\Entities\\UserField"
+    },
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

@@ -1,0 +1,15 @@
+{
+    "Add": "Lisää",
+    "Add Checklist": "Lisää tarkistuslista",
+    "Add Task": "Lisää tehtävä",
+    "Conversation with #:number number not found": "Keskustelua numeron #:number kanssa ei löydy",
+    "Enter tasks (one per line)": "Syötä tehtävät (yksi per rivi)",
+    "Link": "Linkki",
+    "Link To Conversation": "Linkki keskusteluun",
+    "Pick Conversation": "Valitse keskustelu",
+    "Task description": "Tehtävän kuvaus",
+    "Task not found": "Tehtävää ei löydy",
+    "This conversation is linked to the following conversation(s):": "Tämä keskustelu on linkitetty seuraavaan keskusteluun (seuraaviin keskusteluihin):",
+    "Unlink From Conversation": "Poista linkki keskustelusta",
+    "You don't have access to the #:number conversation": "Sinulla ei ole pääsyä keskusteluun #:number"
+}

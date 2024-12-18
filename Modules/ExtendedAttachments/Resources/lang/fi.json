@@ -1,0 +1,14 @@
+{
+    "Are you sure you want to delete :file_name?": "Oletko varma, että haluat poistaa :file_name?",
+    "Attachment Name": "Liitteen nimi",
+    "Attachment Reminder": "Liitetiedoston muistutus",
+    "Attachment not found": "Liitettä ei löydy",
+    "Couldn't preview file": "Tiedoston esikatselu ei onnistu",
+    "Delete Attachment": "Poista liite",
+    "Download": "Lataa",
+    "Download all": "Lataa kaikki",
+    "One phrase per line": "Yksi lause per rivi",
+    "Phrases": "Lause",
+    "Send Anyway": "Lähetä joka tapauksessa",
+    "You mentioned :phrase in your message but no attachment is present.": "Mainitsit viestissäsi :phrase, mutta liitettä ei ole."
+}

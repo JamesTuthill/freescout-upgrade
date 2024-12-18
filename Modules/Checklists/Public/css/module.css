@@ -1,0 +1,46 @@
+#cl-add-toggler {
+    margin-left: 21px;
+}
+.cl-item {
+    padding: 3px 0;
+    /*background-color: #f8f9f9;*/
+    border-bottom: 1px solid #edf2f5;
+}
+.cl-item:hover {
+    background-color: #f8f9f9;
+}
+#cl-conv-checklist {
+    position: relative;
+    top: -7px;
+}
+/*#cl-conv-checklist .cl-item:first-child {
+    border-top: 1px solid #edf2f5;
+}*/
+/*#cl-conv-checklist .cl-item:nth-child(even) {
+    background-color: #f8f9f9;
+}*/
+.cl-item .checkbox {
+    margin: 0;
+}
+.cl-item-actions {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    color: #a5b2bd;
+    padding: 0 7px;
+    margin-right: -7px
+}
+.cl-item-completed .cl-item-text {
+    text-decoration: line-through;
+}
+.cl-item-editor {
+    display: none;
+    margin-bottom: 3px;
+}
+.cl-item-editing .cl-item-wrapper,
+.cl-item-editing .cl-item-actions {
+    display: none;
+}
+.cl-item-editing .cl-item-editor {
+    display: block;
+}

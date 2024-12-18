@@ -1,0 +1,15 @@
+{
+    "Add": "添加",
+    "Add Checklist": "添加任务清单",
+    "Add Task": "添加任务",
+    "Conversation with #:number number not found": "具有#:number数字的对话没找到",
+    "Enter tasks (one per line)": "输入任务(每行一个)",
+    "Link": "关联",
+    "Link To Conversation": "关联到对话",
+    "Pick Conversation": "挑选对话",
+    "Task description": "任务描述",
+    "Task not found": "没找到任务",
+    "This conversation is linked to the following conversation(s):": "对话被关联到如下conversation(s):",
+    "Unlink From Conversation": "取消对话关联",
+    "You don't have access to the #:number conversation": "你没有访问#:number对话的权限"
+}

@@ -1,0 +1,20 @@
+{
+    "Apply": "Применить",
+    "Choose date & time": "Выберите дату и время",
+    "Conversation snoozed": "Тикет отложен до указанного времени",
+    "Conversation unsnoozed": "Тикет восстановлен для работы",
+    "Current date & time": "Текущие дата и время",
+    "Pick date & time": "Отложить до (дата/время)",
+    "Snooze": "Отложить",
+    "Snooze for": "Отложить на",
+    "Snooze until": "Отложить тикет",
+    "Snoozed": "Отложенные",
+    "Snoozed until": "Отложено до",
+    "Unsnooze": "Восстановить",
+    "day(s)": "Дней",
+    "hour(s)": "Часов",
+    "minute(s)": "Минут",
+    "month(s)": "Месяцев",
+    "week(s)": "Недель",
+    "year(s)": "Лет"
+}

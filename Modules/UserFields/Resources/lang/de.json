@@ -1,0 +1,21 @@
+{
+    "Name is required": "Name wird benötigt",
+    "A User Field with this name already exists.": "Ein Benutzerfeld mit diesem Namen existiert bereits.",
+    "User Field not found": "Benutzerfeld konnte nicht gefunden werden",
+    "User field updated": "Benutzerfeld wurde aktualisiert",
+    "User field created": "Benutzerfeld wurde erstellt",
+    "User Field deleted": "Benutzerfeld wurde gelöscht",
+    "Options": "Optionen",
+    "Undo": "Rückgängig",
+    "One option per line": "Eine Option pro Zeile",
+    "Autosuggest": "Automatische Vorschläge",
+    "Required": "Benötigt",
+    "User Fields": "Benutzerfelder",
+    "New User Field": "Neues Benutzerfeld",
+    "Save Field": "Feld speichern",
+    "Deleting this User Field will remove all historical data. Delete this custom field?": "Wenn Sie dieses Benutzerfeld löschen, werden alle historischen Daten gelöscht. Dieses benutzerdefinierte Feld löschen?",
+    "Deleting this dropdown option will remove all historical data. Delete this dropdown option?": "Wenn Sie diese Dropdown-Option löschen, werden alle historischen Daten gelöscht. Diese Dropdown-Option löschen?",
+    "Dropdown": "Dropdown",
+    "Single Line": "Einzeilig",
+    "Multi Line": "Mehrzeilig"
+}

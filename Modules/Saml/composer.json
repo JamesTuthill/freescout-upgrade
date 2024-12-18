@@ -1,0 +1,28 @@
+{
+    "name": "freescout/saml",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Saml\\Providers\\SamlServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Saml\\": ""
+        }
+    },
+    "require": {
+      "onelogin/php-saml": "4.1.0"
+    }
+}

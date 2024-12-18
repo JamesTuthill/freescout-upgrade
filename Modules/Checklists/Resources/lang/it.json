@@ -1,0 +1,15 @@
+{
+    "Add": "Aggiungi",
+    "Add Checklist": "Aggiungi lista di controllo",
+    "Add Task": "Aggiungi attività",
+    "Conversation with #:number number not found": "Conversazione con #:number numero non trovata",
+    "Enter tasks (one per line)": "Inserisci le attività (una per riga)",
+    "Link": "Collegamento",
+    "Link To Conversation": "Collegamento alla Conversazione",
+    "Pick Conversation": "Scegli Conversazione",
+    "Task description": "Descrizione dell'attività",
+    "Task not found": "Attività non trovata",
+    "This conversation is linked to the following conversation(s):": "Questa conversazione è collegata alle seguenti conversazioni:",
+    "Unlink From Conversation": "Scollega dalla conversazione",
+    "You don't have access to the #:number conversation": "Non hai accesso alla conversazione #:number"
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Snooze",
+    "alias": "snooze",
+    "description": "Postpone tickets and put them aside until you need them!",
+    "version": "1.0.20",
+    "detailsUrl": "https://freescout.net/module/snooze/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.8.113",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\Snooze\\Providers\\SnoozeServiceProvider"
+    ],
+    "aliases": {
+        "Snooze": "Modules\\Snooze\\Providers\\SnoozeServiceProvider"
+    },
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

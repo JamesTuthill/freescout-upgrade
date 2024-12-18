@@ -1,0 +1,24 @@
+{
+    "name": "Mailbox Icons",
+    "alias": "mailboxicons",
+    "description": "Add cool unique icons to your mailboxes to easily distinguish between them!",
+    "version": "1.0.7",
+    "detailsUrl": "https://freescout.net/module/mailbox-icons/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.8.52",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\MailboxIcons\\Providers\\MailboxIconsServiceProvider"
+    ],
+    "aliases": {
+        "MailboxIcons": "Modules\\MailboxIcons\\Providers\\MailboxIconsServiceProvider"
+    },
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

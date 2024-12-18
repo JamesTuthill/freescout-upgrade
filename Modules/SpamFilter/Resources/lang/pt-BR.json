@@ -1,0 +1,20 @@
+{
+    "Blacklist Customer": "Cliente na Lista Negra",
+    "Blacklisted": "Na Lista Negra",
+    "Filter Using Spam-Filtering Altorithm & Learning": "Filtrar Usando Algoritmo e Aprendizado de Filtragem de Spam",
+    "Filter by Body": "Filtrar por Corpo",
+    "Filter by Sender Email": "Filtrar por Email do Remetente",
+    "Filter by Subject": "Filtrar por Assunto",
+    "Learning Memory": "Memória de Aprendizado",
+    "Learning memory has been reset for the mailbox": "A memória de aprendizado foi redefinida para a caixa de correio.",
+    "One phrase per line": "Uma frase por linha",
+    "Reset Learning Memory of the Selected Mailbox": "Redefinir a Memória de Aprendizado da Caixa de Correio Selecionada",
+    "Spam Filter": "Filtro de Spam",
+    "UnBlacklist": "Remover da Lista Negra",
+    "UnWhitelist": "Remover da Lista Branca",
+    "Use an asterisk (*) where you want any number of any symbols": "Use um asterisco (*) onde você deseja qualquer número de quaisquer símbolos.",
+    "When you are marking conversations as spam or non-spam the Spam Filter learns from your actions and stores the information in the learning memory for each mailbox.": "Quando você marca conversas como spam ou não spam, o Filtro de Spam aprende com suas ações e armazena as informações na memória de aprendizado para cada caixa de correio.",
+    "Whitelist Customer": "Cliente na Lista Branca",
+    "Whitelisted": "Na Lista Branca",
+    "asterisk can't be used in other filters": "O asterisco não pode ser usado em outros filtros"
+}

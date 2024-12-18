@@ -1,0 +1,22 @@
+{
+    "Allow to Reset Timer": "Salli ajastimen nollaaminen",
+    "Allow users to reset the current time spent on a ticket.": "Anna käyttäjien nollata tikettiin kulunut tähänastinen aika.",
+    "Allow users to view timelogs in conversations. Admin always can see timelogs.": "Salli käyttäjien tarkastella aikapäiväkirjoja keskusteluissa. Ylläpito voi aina nähdä aikapäiväkirjat.",
+    "Click to edit": "Klikkaa muokataksesi",
+    "Conversation is assigned to another user": "Keskustelu on osoitettu toiselle käyttäjälle",
+    "Display Timelogs to Users": "Näytä aikapäiväkirjat käyttäjille",
+    "Display Timer Controls": "Näytä ajastimen säätimet",
+    "Reset Time": "Resetointiaika",
+    "Show Review Time Dialog": "Näytä tarkistusaika-valintaikkuna",
+    "Submit Time": "Lähetä aika",
+    "The timer starts when the conversation is assigned to the user.": "Ajastin käynnistyy, kun keskustelu osoitetaan käyttäjälle.",
+    "The timer starts when the user views the conversation, the timer pauses when the user navigates away from the conversation.": "Ajastin käynnistyy, kun käyttäjä katsoo keskustelua, ja ajastin pysähtyy, kun käyttäjä siirtyy pois keskustelusta.",
+    "This is the amount of time you spent on this ticket. Edit the time, if needed, and then click Submit Time. Click Cancel if you don't want to save the time spent.": "Tämä on tähän tikettiin käyttämäsi aika. Muokkaa aikaa tarvittaessa ja valitse sitten Lähetä aika. Paina Peruuta, jos et halua tallentaa käytettyä aikaa.",
+    "Time": "Aika",
+    "Time Tracking": "Ajanseuranta",
+    "Timelogs": "Aikalokit",
+    "Total time": "Kokonaisaika",
+    "Tracking Mode": "Seurantatila",
+    "Users can manually pause or resume the timer.": "Käyttäjät voivat manuaalisesti keskeyttää ajastimen ja käynnistää sen uudestaan.",
+    "Users can review and edit their time before the timelog is saved (when the conversation is closed or assigned to another user).": "Käyttäjät voivat tarkastella ja muokata aikojaan ennen kuin aikaloki tallennetaan (kun keskustelu suljetaan tai annetaan toiselle käyttäjälle)."
+}

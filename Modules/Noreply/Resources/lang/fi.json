@@ -1,0 +1,10 @@
+{
+    "Auto replies will not be sent to the specified noreply emails.": "Automaattisia vastauksia ei lähetetä määritettyihin noreply-sähköposteihin.",
+    "Custom Noreply Emails": "Mukautetut Noreply-sähköpostiviestit",
+    "Default Noreply Emails": "Noreply-sähköpostin oletusarvo",
+    "Enter email prefixes without @ sign or full email addresses one per line.": "Kirjoita sähköpostin etuliitteet ilman @-merkkiä tai täydelliset sähköpostiosoitteet yksi per rivi.",
+    "Noreply Emails": "Noreply-sähköpostit",
+    "Sending to :email email. Are you sure?": "Lähetys osoitteeseen :email email. Oletko varma?",
+    "Use a dash where you want to allow a dash, underscore or no symbol.": "Käytä ajatusviivaa silloin, kun haluat sallia viivan tai ei symbolia.",
+    "Use an asterisk * where you want to allow any number of any symbols.": "Käytä tähteä *, jos haluat sallia minkä tahansa määrän mitä tahansa symboleja."
+}

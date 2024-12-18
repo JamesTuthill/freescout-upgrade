@@ -1,0 +1,14 @@
+{
+    "Are you sure you want to delete :file_name?": "Sei sicuro di voler eliminare :file_name?",
+    "Attachment Name": "Nome dell'allegato",
+    "Attachment Reminder": "Promemoria allegato",
+    "Attachment not found": "Allegato non trovato",
+    "Couldn't preview file": "Non posso mostrare in anteprima il file",
+    "Delete Attachment": "Cancella Allegato",
+    "Download": "Scarica",
+    "Download all": "Scarica tutto",
+    "One phrase per line": "Una frase per riga",
+    "Phrases": "Frasi",
+    "Send Anyway": "Invia comunque",
+    "You mentioned :phrase in your message but no attachment is present.": "Hai menzionato :phrase nel tuo messaggio ma non è presente alcun allegato."
+}

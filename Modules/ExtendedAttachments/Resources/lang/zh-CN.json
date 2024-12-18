@@ -1,0 +1,14 @@
+{
+    "Are you sure you want to delete :file_name?": "你确定要删除:file_name?",
+    "Attachment Name": "附件名称",
+    "Attachment Reminder": "附件提醒",
+    "Attachment not found": "没找到附件",
+    "Couldn't preview file": "无法预览文件",
+    "Delete Attachment": "删除附件",
+    "Download": "下载",
+    "Download all": "下载全部",
+    "One phrase per line": "一个短语每行",
+    "Phrases": "短语",
+    "Send Anyway": "无论怎样都发送",
+    "You mentioned :phrase in your message but no attachment is present.": "你在你的消息中提及的:phrase没有附件展现"
+}

@@ -1,0 +1,20 @@
+{
+    "Back to Teams": "Tilbake til Teams",
+    "Create Team": "Opprett team",
+    "Create a New Team": "Opprett et nytt team",
+    "Deleting :name team will assign it's conversations to:": "Hvis du sletter :name-teamet, tildeles dets samtaler til:",
+    "Error occured processing the image. Make sure that PHP GD extension is enabled.": "Det oppsto en feil under behandling av bildet. Sørg for at PHP GD-utvidelsen er aktivert.",
+    "Icon": "Ikon",
+    "Icons": "Ikoner",
+    "Mailbox Access": "Postbokstilgang",
+    "Members": "Medlemmer",
+    "New Team": "Nytt team",
+    "Team": "Team",
+    "Team Image": "Teambilde",
+    "Team Name": "Team-navn",
+    "Team created": "Team opprettet",
+    "Team deleted": "Teamet er slettet",
+    "Team not found": "Teamet ble ikke funnet",
+    "Team updated": "Team oppdatert",
+    "Teams": "Teams"
+}

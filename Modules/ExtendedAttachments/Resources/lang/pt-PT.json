@@ -1,0 +1,14 @@
+{
+    "Are you sure you want to delete :file_name?": "Tem a certeza de que pretende apagar :file_name?",
+    "Attachment Name": "Nome do anexo",
+    "Attachment Reminder": "Lembrete de anexos",
+    "Attachment not found": "Anexo não encontrado",
+    "Couldn't preview file": "Não foi possível pré-visualizar o ficheiro",
+    "Delete Attachment": "Eliminar Anexo",
+    "Download": "Transferir",
+    "Download all": "Transferir todos",
+    "One phrase per line": "Uma frase por linha",
+    "Phrases": "Frases",
+    "Send Anyway": "Enviar mesmo assim",
+    "You mentioned :phrase in your message but no attachment is present.": "Mencionou a :phrase na sua mensagem, mas não existe nenhum anexo."
+}

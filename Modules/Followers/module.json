@@ -1,0 +1,22 @@
+{
+    "name": "Followers",
+    "alias": "followers",
+    "description": "Let users subscribe other users to conversations!",
+    "version": "1.0.3",
+    "detailsUrl": "https://freescout.net/module/followers/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.4.9",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\Followers\\Providers\\FollowersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

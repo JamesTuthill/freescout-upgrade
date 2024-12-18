@@ -1,0 +1,23 @@
+{
+    "API errors can be found in :%a_begin%Manage » Logs » WhatsApp Errors:%a_end%.": "API-virheet löytyvät kohdasta :%a_begin%Hallinta \" Lokit \" WhatsApp-virheet:%a_end%.",
+    "Account SID": "Tilin SID",
+    "Audio": "Ääni",
+    "Auth Token": "Auth-tunniste",
+    "Channel ID": "Kanavan tunnus",
+    "Contact": "Kontakti",
+    "Document": "Dokumentti",
+    "Enabled": "Aktivoitu",
+    "Error occurred removing a Whatsapp webhook": "Whatsapp-webhookin poistamisessa tapahtui virhe",
+    "Error occurred setting up a Whatsapp webhook": "Whatsapp-webhookin perustamisessa tapahtui virhe",
+    "File(s)": "Kansio(t)",
+    "Image": "Kuva",
+    "Image(s)": "Kuva(t)",
+    "Instructions": "Ohjeet",
+    "Location": "Lokaatio",
+    "Token": "Tunniste",
+    "Twilio Phone Number": "Twilio-puhelinnumero",
+    "Video": "Video",
+    "Video(s)": "Video(t)",
+    "Webhook URL": "Webhook URL",
+    "WhatsApp": "WhatsApp"
+}

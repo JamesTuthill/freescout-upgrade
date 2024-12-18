@@ -1,0 +1,25 @@
+{
+    "name": "freescout/stickynotes",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\StickyNotes\\Providers\\StickyNotesServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\StickyNotes\\": ""
+        }
+    }
+}

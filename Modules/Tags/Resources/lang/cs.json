@@ -1,0 +1,17 @@
+{
+    "Add Tag(s)": "Přidat štítek(y)",
+    "Are you sure you want to delete this tag?": "Opravdu chcete tento štítek odstranit?",
+    "Color": "Barva",
+    "Contains": "Obsahuje",
+    "Does not contain": "Neobsahuje",
+    "Edit Tag": "Upravit značku",
+    "Is equal to": "Se rovná",
+    "Matches regex pattern": "Odpovídá vzoru regex",
+    "Remove Tag": "Odstranit štítek",
+    "Remove Tag(s)": "Odstranit štítek(y)",
+    "Tag": "Štítek",
+    "Tag deleted": "Štítek smazán",
+    "Tag with such name already exists": "Štítek s takovým názvem již existuje",
+    "Tag(s)": "Štítek(y)",
+    "Tags": "Štítky"
+}

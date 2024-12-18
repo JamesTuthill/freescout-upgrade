@@ -1,0 +1,19 @@
+{
+    "API error:": "API错误",
+    "Admin API Key": "管理员 API 密钥",
+    "Check health": "检查健康状况",
+    "Could not create an index in Meilisearch": "无法在Meilisearch中创建检索",
+    "Empty API response. Check your Meilisearch credentials. HTTP status code: :status": "API 响应为空。检查您的Meilisearch凭据。HTTP 状态代码: :status",
+    "Index not created in Meilisearch": "没有在Meilisearch创建索引",
+    "Last log message": "最近的日志消息",
+    "Max Conversations In Search Results": "最大对话搜索结果",
+    "Meilisearch API authentication error": "Meilisearch API验证错误",
+    "Meilisearch Health": "Meilisearch健康",
+    "Meilisearch URL": "Meilisearch URL",
+    "Rebuild Index": "重建索引",
+    "This value determines the maximum number of conversations which may be shown in the search results. The larger this value the slower the search.": "该值决定了搜索结果中可以显示的最大对话数。该值越大，搜索速度越慢。",
+    "Threads Deleting Queue": "现成删除中队列",
+    "Threads Indexing": "现成索引中",
+    "Threads Updating Queue": "线程更新队列",
+    "Unknown API error occurred.": "发生未知的API错误"
+}

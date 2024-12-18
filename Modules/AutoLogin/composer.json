@@ -1,0 +1,25 @@
+{
+    "name": "freescout/autologin",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\AutoLogin\\Providers\\AutoLoginServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\AutoLogin\\": ""
+        }
+    }
+}

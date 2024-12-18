@@ -1,0 +1,17 @@
+{
+    "Add Tag(s)": "Legg til tagg(er)",
+    "Are you sure you want to delete this tag?": "Er du sikker på at du vil slette denne taggen?",
+    "Color": "Farge",
+    "Contains": "Inneholder",
+    "Does not contain": "Inneholder ikke",
+    "Edit Tag": "Rediger tagg",
+    "Is equal to": "Er lik",
+    "Matches regex pattern": "Samsvarer med regex mønster",
+    "Remove Tag": "Fjern tagg",
+    "Remove Tag(s)": "Fjern tagg(er)",
+    "Tag": "Tagg",
+    "Tag deleted": "Tagg slettet",
+    "Tag with such name already exists": "En tagg med dette navnet finnes allerede",
+    "Tag(s)": "Tagg(er)",
+    "Tags": "Tagger"
+}

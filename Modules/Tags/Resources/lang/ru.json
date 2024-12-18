@@ -1,0 +1,17 @@
+{
+    "Add Tag(s)": "Добавить тег(и)",
+    "Are you sure you want to delete this tag?": "Вы уверены, что хотите удалить этот тег?",
+    "Color": "Цвет",
+    "Contains": "Содержит",
+    "Does not contain": "Не содержит",
+    "Edit Tag": "Редактировать тег",
+    "Is equal to": "Равен",
+    "Matches regex pattern": "Соответтвует регулярному выражению",
+    "Remove Tag": "Удалить тег",
+    "Remove Tag(s)": "Удалить тег(и)",
+    "Tag": "Тег",
+    "Tag deleted": "Тег удалён",
+    "Tag with such name already exists": "Тег с таким именем уже существует",
+    "Tag(s)": "Тег(и)",
+    "Tags": "Теги"
+}

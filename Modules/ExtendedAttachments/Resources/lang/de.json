@@ -1,0 +1,14 @@
+{
+    "Are you sure you want to delete :file_name?": "Sicher den Anhang :file_name löschen?",
+    "Attachment Name": "Name des Anhangs",
+    "Attachment Reminder": "Erinnerung an den Anhang",
+    "Attachment not found": "Anhang nicht gefunden",
+    "Couldn't preview file": "Vorschau nicht möglich",
+    "Delete Attachment": "Anhang gelöscht",
+    "Download": "Herunterladen",
+    "Download all": "Alle herunterladen",
+    "One phrase per line": "Ein Satz pro Linie",
+    "Phrases": "Satz",
+    "Send Anyway": "Trotzdem senden",
+    "You mentioned :phrase in your message but no attachment is present.": "Sie haben :phrase in Ihrer Nachricht erwähnt, aber es ist kein Anhang vorhanden."
+}

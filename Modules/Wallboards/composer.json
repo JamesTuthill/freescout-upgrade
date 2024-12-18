@@ -1,0 +1,25 @@
+{
+    "name": "freescout/wallboards",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Wallboards\\Providers\\WallboardsServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Wallboards\\": ""
+        }
+    }
+}

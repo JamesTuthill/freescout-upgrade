@@ -1,0 +1,25 @@
+{
+    "name": "freescout/whatsapp",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\WhatsApp\\Providers\\WhatsAppServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\WhatsApp\\": ""
+        }
+    }
+}

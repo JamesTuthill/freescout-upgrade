@@ -1,0 +1,19 @@
+{
+    ":person marked as :status_name": ":person označil jako :status_name",
+    ":person marked as :status_name conversation #:conversation_number": ":person označil jako :status_name konverzaci č. #:conversation_number",
+    "Blacklist Customer": "Blokovat zákzaníka",
+    "Blacklisted": "Blokovaný",
+    "Filter Using Spam-Filtering Algorithm & Learning": "Filtrování pomocí samo se učícího algoritmu pro filtrování spamu",
+    "Filter by Body": "Filtrovat dle obsahu",
+    "Filter by Subject": "Filtrovat dle předmětu",
+    "Learning Memory": "Pameť učení",
+    "Learning memory has been reset for the mailbox": "Paměť učení byla pro poštovní schránku resetována ",
+    "One phrase per line": "Jeden výraz na řádek",
+    "Reset Learning Memory of the Selected Mailbox": "Obnovit paměť učení vybrané schránky",
+    "Spam Filter": "Filtrování spamu",
+    "UnBlacklist": "Neblokovat",
+    "UnWhitelist": "Nepovolit",
+    "When you are marking conversations as spam or non-spam the Spam Filter learns from your actions and stores the information in the learning memory for each mailbox.": "Při označování konverzací jako SPAM nebo NENÍ-SPAM se filtr učí z Vašich úkonů a ukládá tyto informace do paměti učení pro každou  schránku.",
+    "Whitelist Customer": "Povolit zákazníka",
+    "Whitelisted": "Povolený"
+}

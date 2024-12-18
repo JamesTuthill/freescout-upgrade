@@ -1,0 +1,10 @@
+{
+    "Auto replies will not be sent to the specified noreply emails.": "Автоответы не будут отправляться на указанные электронные адреса.",
+    "Custom Noreply Emails": "Дополнительные noreply-адреса",
+    "Default Noreply Emails": "Стандартные noreply-адреса",
+    "Enter email prefixes without @ sign or full email addresses one per line.": "Введите по одному на строку полные адреса или префиксы электронной почты без знака @.",
+    "Noreply Emails": "Noreply-адреса",
+    "Sending to :email email. Are you sure?": "Отправка по адресу :email email. Ты уверен?",
+    "Use a dash where you want to allow a dash, underscore or no symbol.": "Используйте дефис \"-\" там, где вы хотите разрешить дефис, подчёркивание или отсутствие символа.",
+    "Use an asterisk * where you want to allow any number of any symbols.": "Используйте звёздочку * там, где вы хотите разрешить любое количество любых символов."
+}

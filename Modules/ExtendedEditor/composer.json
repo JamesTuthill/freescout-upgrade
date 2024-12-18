@@ -1,0 +1,25 @@
+{
+    "name": "freescout/extendededitor",
+    "description": "",
+    "authors": [
+        {
+            "name": "FreeScout",
+            "email": "support@freescout.net"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\ExtendedEditor\\Providers\\ExtendedEditorServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ExtendedEditor\\": ""
+        }
+    }
+}

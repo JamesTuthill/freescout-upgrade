@@ -1,0 +1,11 @@
+{
+    "Are you sure you want to delete this customer and :conv_count conversation(s) belonging to the customer? Agents' replies to the customer also will be deleted.": "Sei sicuro di voler eliminare questo cliente e le conversazioni :conv_count appartenenti al cliente? Verranno eliminate anche le risposte degli agenti al cliente",
+    "Customer and customer's conversations are being deleted in the background. It may take a few minutes.": "Il cliente e le sue conversazioni vengono eliminate in background. Potrebbero essere necessari alcuni minuti.",
+    "Customer currently is being deleted in the background...": "Il cliente è attualmente in fase di eliminazione in background...",
+    "Customer not found": "Cliente non trovato",
+    "Delete Customer With Conversations": "Elimina cliente con conversazioni",
+    "Delete Emails From Mail Server": "Elimina email dal server di posta",
+    "Delete With Conversations": "Elimina con conversazioni",
+    "Delete original emails from the mail server when deleting customers or conversations.": "Elimina le email originali dal server di posta quando elimini clienti o conversazioni.",
+    "Users are allowed to delete customers with their conversations": "Gli utenti possono eliminare i clienti con le loro conversazioni"
+}

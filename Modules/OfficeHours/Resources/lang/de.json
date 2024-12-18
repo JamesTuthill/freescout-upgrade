@@ -1,0 +1,13 @@
+{
+    "Day off": "Ruhetag",
+    "Auto replies will be sent outside of the specified office hours.": "Automatische Antworten werden außerhalb der angegebenen Bürozeiten versandt.",
+    "Office hours are based on your :%a_begin%company timezone:%a_end%.": "Bürozeiten basieren auf der :%a_begin%Unternehmens-Zeitzone:%a_end%.",
+    "Monday": "Montag",
+    "Tuesday": "Dienstag",
+    "Wednesday": "Mittwoch",
+    "Thursday": "Donnerstag",
+    "Friday": "Freitag",
+    "Saturday": "Samstag",
+    "Sunday": "Sonntag",
+    "Office Hours": "Bürozeiten"
+}

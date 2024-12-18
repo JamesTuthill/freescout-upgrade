@@ -1,0 +1,5 @@
+{
+    ":person is @mentioned in a conversation": ":person が会話でメンションされました",
+    ":person mentioned you in a note on #:conversation_number": ":person が会話 #:conversation_number のメモであなたをメンションしました",
+    "I'm @mentioned in a conversation": "会話でメンションされました"
+}

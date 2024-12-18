@@ -1,0 +1,19 @@
+{
+    "API error:": "Błąd API",
+    "Admin API Key": "Klucz API administratora",
+    "Check health": "Sprawdź stan",
+    "Could not create an index in Meilisearch": "Nie można utworzyć indeksu w Meilisearch",
+    "Empty API response. Check your Meilisearch credentials. HTTP status code: :status": "Pusta odpowiedź API. Sprawdź swoje dane uwierzytelniające Meilisearch. Kod statusu HTTP: :status",
+    "Index not created in Meilisearch": "Indeks nie został utworzony w Meilisearch",
+    "Last log message": "Ostatni komunikat dziennika",
+    "Max Conversations In Search Results": "Maksymalna liczba rozmów w wynikach wyszukiwania",
+    "Meilisearch API authentication error": "Błąd uwierzytelniania API Meilisearch",
+    "Meilisearch Health": "Stan Meilisearch",
+    "Meilisearch URL": "Meilisearch URL",
+    "Rebuild Index": "Odbuduj indeks",
+    "This value determines the maximum number of conversations which may be shown in the search results. The larger this value the slower the search.": "Wartość ta określa maksymalną liczbę rozmów, które mogą zostać wyświetlone w wynikach wyszukiwania. Im większa wartość, tym wolniejsze wyszukiwanie.",
+    "Threads Deleting Queue": "Kolejka usuwania wiadomości",
+    "Threads Indexing": "Indeksacja wiadomości",
+    "Threads Updating Queue": "Kolejka aktualizacji wiadomości",
+    "Unknown API error occurred.": "Wystąpił nieznany błąd API."
+}

@@ -1,0 +1,17 @@
+{
+    "Add Tag(s)": "Luo tunniste",
+    "Are you sure you want to delete this tag?": "Haluatko varmasti poistaa tämän tunnisteen?",
+    "Color": "Väri",
+    "Contains": "Sisältää",
+    "Does not contain": "Ei sisällä",
+    "Edit Tag": "Muokkaa tunnistetta",
+    "Is equal to": "On yhtä kuin",
+    "Matches regex pattern": "Sopii regex-kuvioon",
+    "Remove Tag": "Poista tunniste",
+    "Remove Tag(s)": "Poista tunnisteet",
+    "Tag": "Tunniste",
+    "Tag deleted": "Tunniste poistettu",
+    "Tag with such name already exists": "Tämän niminen tunniste on jo olemassa",
+    "Tag(s)": "Tunniste(et)",
+    "Tags": "Tunnisteet"
+}

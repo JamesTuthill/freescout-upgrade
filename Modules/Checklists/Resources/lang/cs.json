@@ -1,0 +1,15 @@
+{
+    "Add": "Přidat",
+    "Add Checklist": "Přidat checklist",
+    "Add Task": "Přidat úkol",
+    "Conversation with #:number number not found": "Konverzace s číslem #:number nebyla nalezena",
+    "Enter tasks (one per line)": "Napiš úkoly (jeden na řádek)",
+    "Link": "Odkaz",
+    "Link To Conversation": "Propojit s konverzací",
+    "Pick Conversation": "Vybrat konverzaci",
+    "Task description": "Popis úkolu",
+    "Task not found": "Úkol nebyl nalezen",
+    "This conversation is linked to the following conversation(s):": "Tato konverzace je propojena s následujícími konverzacemi:",
+    "Unlink From Conversation": "Zrušení propojení s konverzací",
+    "You don't have access to the #:number conversation": "Nemáte přístup ke konverzaci #:number"
+}

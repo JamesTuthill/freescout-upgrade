@@ -1,0 +1,19 @@
+#team-members,
+.team-mailboxes {
+    max-height: 200px;
+    overflow-y: auto;
+}
+#team-members .control-group {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    text-overflow: ellipsis;
+}
+#team-members .control-label {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#team-image-delete {
+    line-height: 25px;
+}

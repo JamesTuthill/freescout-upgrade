@@ -1,0 +1,5 @@
+{
+    ":person is &#x40;mentioned in a conversation": "在对话中:person被&#x40;提及",
+    ":person mentioned you in a note on #:conversation_number": "在#:conversation_number的一个备注中:person提及了你",
+    "I'm &#x40;mentioned in a conversation": "在一个对话中我被&#x40;提及"
+}

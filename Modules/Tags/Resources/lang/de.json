@@ -1,0 +1,17 @@
+{
+    "Add Tag(s)": "Markierung(en) hinzufügen",
+    "Are you sure you want to delete this tag?": "Sind Sie sicher, dass Sie diese Markierung löschen möchten?",
+    "Color": "Farbe",
+    "Contains": "Enthält",
+    "Does not contain": "Enthält nicht",
+    "Edit Tag": "Markierung bearbeiten",
+    "Is equal to": "Entspricht",
+    "Matches regex pattern": "Entspricht Regex Muster",
+    "Remove Tag": "Markierung entfernen",
+    "Remove Tag(s)": "Markierung(en) entfernen",
+    "Tag": "Markierung",
+    "Tag deleted": "Markierung gelöscht",
+    "Tag with such name already exists": "Markierung mit diesem Namen existiert bereits",
+    "Tag(s)": "Markierung(en)",
+    "Tags": "Markierungen"
+}

@@ -1,0 +1,10 @@
+{
+    "Auto replies will not be sent to the specified noreply emails.": "Automatische Antworten werden nicht an die angegebenen Nicht-Antwort-E-Mails gesendet.",
+    "Custom Noreply Emails": "Benutzerdefinierte Noreply-E-Mails",
+    "Default Noreply Emails": "Standard Noreply-E-Mails",
+    "Enter email prefixes without @ sign or full email addresses one per line.": "Geben Sie E-Mail-Präfixe ohne @-Zeichen oder vollständige E-Mail-Adressen einzeln pro Zeile ein.",
+    "Noreply Emails": "Noreply E-Mails",
+    "Sending to :email email. Are you sure?": "Senden an :email . Sind Sie sicher?",
+    "Use a dash where you want to allow a dash, underscore or no symbol.": "Verwenden Sie einen Bindestrich, wenn Sie einen Bindestrich oder kein Symbol zulassen wollen.",
+    "Use an asterisk * where you want to allow any number of any symbols.": "Verwenden Sie ein Sternchen *, wenn Sie eine beliebige Anzahl beliebiger Symbole zulassen wollen."
+}

@@ -1,0 +1,1 @@
+<li @if (\Helper::isMenuSelected('twitter'))class="active"@endif><a href="{{ route('mailboxes.twitter.settings', ['mailbox_id'=>$mailbox->id]) }}"><i class="glyphicon glyphicon-erase"></i> {{ __('Twitter') }}</a></li>

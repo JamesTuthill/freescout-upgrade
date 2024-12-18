@@ -1,0 +1,22 @@
+{
+    "name": "Out of Office",
+    "alias": "outofoffice",
+    "description": "Let users control their availability!",
+    "version": "1.0.2",
+    "detailsUrl": "https://freescout.net/module/out-of-office/",
+    "author": "FreeScout",
+    "authorUrl": "https://freescout.net",
+    "requiredAppVersion": "1.8.12",
+    "license": "AGPL-3.0",
+    "keywords": [],
+    "active": 0,
+    "order": 0,
+    "providers": [
+        "Modules\\OutOfOffice\\Providers\\OutOfOfficeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
