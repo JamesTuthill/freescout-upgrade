@@ -78,7 +78,7 @@ class SpamFilterServiceProvider extends ServiceProvider
             $javascripts[] = \Module::getPublicPath(SPAM_FILTER_MODULE).'/js/module.js';
             return $javascripts;
         });
-        
+
         // Add item to settings sections.
         \Eventy::addFilter('settings.sections', function($sections) {
             $sections[SPAM_FILTER_MODULE] = ['title' => __('Spam Filter'), 'icon' => 'ban-circle', 'order' => 350];
@@ -88,11 +88,11 @@ class SpamFilterServiceProvider extends ServiceProvider
 
         // Section settings
         \Eventy::addFilter('settings.section_settings', function($settings, $section) {
-           
+
             if ($section != SPAM_FILTER_MODULE) {
                 return $settings;
             }
-           
+
             $settings['spamfilter.auto'] = config('spamfilter.auto');
             $settings['spamfilter.subject'] = base64_decode(config('spamfilter.subject'));
             $settings['spamfilter.body'] = base64_decode(config('spamfilter.body'));
@@ -103,7 +103,7 @@ class SpamFilterServiceProvider extends ServiceProvider
 
         // Section parameters.
         \Eventy::addFilter('settings.section_params', function($params, $section) {
-           
+
             if ($section != SPAM_FILTER_MODULE) {
                 return $params;
             }
@@ -152,7 +152,7 @@ class SpamFilterServiceProvider extends ServiceProvider
 
         // Conversation marked as spam
         \Eventy::addAction('conversation.status_changed', function($conversation, $user, $changed_on_reply, $prev_status) {
-            
+
             // Check only conversations created by customers.
             if ($conversation->source_via != Conversation::PERSON_CUSTOMER) {
                 return;
@@ -200,7 +200,7 @@ class SpamFilterServiceProvider extends ServiceProvider
                     <div class="customer-section">
                         <div class="spam-status">
                             <span class="label label-<?php if ($blacklisted): ?>danger<?php else: ?>success<?php endif ?>"><?php if ($blacklisted): ?><?php echo __('Blacklisted') ?><?php else: ?><?php echo __('Whitelisted') ?><?php endif ?> (<?php echo __('Spam Filter') ?>)</span>
-                            
+
                                 <?php if (!empty($spam_status['conversation_id'])): ?>
                                     <a href="<?php echo Conversation::conversationUrl($spam_status['conversation_id']) ?>" class="sf-help" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="<?php echo \App\User::find($spam_status['user_id'])->getFullName(); ?> (<?php echo User::dateFormat($spam_status['date'] ?? '') ?>)">
                                         <i class="glyphicon glyphicon-info-sign"></i>
@@ -264,7 +264,7 @@ class SpamFilterServiceProvider extends ServiceProvider
                         if (mb_stristr($conversation->subject, $subject_filter)) {
                             $is_spam = true;
                             break;
-                        }   
+                        }
                     }
                 }
             }
@@ -279,7 +279,7 @@ class SpamFilterServiceProvider extends ServiceProvider
                         if (mb_stristr($plain_body, $body_filter)) {
                             $is_spam = true;
                             break;
-                        }   
+                        }
                     }
                 }
             }
@@ -296,7 +296,7 @@ class SpamFilterServiceProvider extends ServiceProvider
                         if (preg_match("#^".$sender_regex."$#", $thread->from ?? '')) {
                             $is_spam = true;
                             break;
-                        }   
+                        }
                     }
                 }
             }
@@ -307,7 +307,7 @@ class SpamFilterServiceProvider extends ServiceProvider
                 if (!$thread->isAutoResponder()) {
                     // Do not check messages from whitelisted customers.
                     $spam_status = self::getCustomerSpamStatus($customer->spam_status, $conversation->mailbox_id);
-                    if ($spam_status && !in_array($spam_status['spam_status'], [self::SPAM_STATUS_EMAIL_WHITELISTED_SOFT, self::SPAM_STATUS_EMAIL_WHITELISTED_HARD])) 
+                    if ($spam_status && !in_array($spam_status['spam_status'], [self::SPAM_STATUS_EMAIL_WHITELISTED_SOFT, self::SPAM_STATUS_EMAIL_WHITELISTED_HARD]))
                     {
                         $is_spam = self::isSpamStatistical($conversation->subject.' '.$thread->body, $conversation->mailbox_id);
                     }
@@ -317,7 +317,7 @@ class SpamFilterServiceProvider extends ServiceProvider
             // Mark as spam.
             if ($is_spam) {
                 $spam_folder = $conversation->mailbox->getFolderByType(Folder::TYPE_SPAM);
-                    
+
                 if ($spam_folder) {
 
                     // Move conversation to Spam folder.
@@ -382,7 +382,7 @@ class SpamFilterServiceProvider extends ServiceProvider
 
     /**
      * Set customer spam status json value.
-     * 
+     *
      * @param [type] $customer    [description]
      * @param [type] $mailbox_id  [description]
      * @param [type] $spam_status [description]
@@ -402,7 +402,7 @@ class SpamFilterServiceProvider extends ServiceProvider
 
     /**
      * Conver customer spam status into array.
-     * 
+     *
      * @param  [type] $json_str [description]
      * @return [type]           [description]
      */
@@ -425,7 +425,7 @@ class SpamFilterServiceProvider extends ServiceProvider
     }
 
     /**
-     * Check if test is spam
+     * Check if tests is spam
      */
     public static function isSpamStatistical($text, $mailbox_id)
     {

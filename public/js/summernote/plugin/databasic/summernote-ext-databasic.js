@@ -84,7 +84,7 @@
 
       var body = '<div class="form-group row-fluid">' +
           '<label>' + lang.databasic.testLabel + '</label>' +
-          '<input class="ext-databasic-test form-control" type="text" />' +
+          '<input class="ext-databasic-tests form-control" type="text" />' +
           '</div>';
       var footer = '<button href="#" class="btn btn-primary ext-databasic-save">' + lang.databasic.insert + '</button>';
 
@@ -161,7 +161,7 @@
           // Get the first node on range(for edit).
           return {
             node: $data,
-            test: $data.attr('data-test')
+            test: $data.attr('data-tests')
           };
         }
       }
@@ -171,12 +171,12 @@
 
     self.setContent = function($node) {
       $node.html('<p contenteditable="false">' + self.icon + ' ' + lang.databasic.name + ': ' +
-        $node.attr('data-test') + '</p>');
+        $node.attr('data-tests') + '</p>');
     };
 
     self.updateNode = function(info) {
       self.setContent(info.node
-        .attr('data-test', info.test));
+        .attr('data-tests', info.test));
     };
 
     self.createNode = function(info) {
@@ -221,7 +221,7 @@
 
     self.openDialog = function(info) {
       return $.Deferred(function(deferred) {
-        var $inpTest = self.$dialog.find('.ext-databasic-test');
+        var $inpTest = self.$dialog.find('.ext-databasic-tests');
         var $saveBtn = self.$dialog.find('.ext-databasic-save');
         var onKeyup = function(event) {
           if (event.keyCode === 13) {
@@ -283,7 +283,7 @@
           name: 'Basic Data Container',
           insert: 'insert basic data container',
           edit: 'edit basic data container',
-          testLabel: 'test input'
+          testLabel: 'tests input'
         }
       }
     }

@@ -2433,7 +2433,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
     var globals = window || global;
 
     // Slightly odd way construct our object. This way methods are force bound.
-    // Used to test for duplicate library.
+    // Used to tests for duplicate library.
     _extends(this, {
 
       // For browsers that do not support isTrusted, assumes event is native.

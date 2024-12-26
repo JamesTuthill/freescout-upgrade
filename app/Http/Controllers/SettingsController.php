@@ -390,7 +390,7 @@ class SettingsController extends Controller
             case 'send_test':
 
                 if (empty($request->to)) {
-                    $response['msg'] = __('Please specify recipient of the test email');
+                    $response['msg'] = __('Please specify recipient of the tests email');
                 }
 
                 if (!$response['msg']) {

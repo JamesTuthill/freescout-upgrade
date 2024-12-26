@@ -74,11 +74,11 @@ class FasterSearchServiceProvider extends ServiceProvider
 
         // Section settings
         \Eventy::addFilter('settings.section_settings', function($settings, $section) {
-           
+
             if ($section != FS_MODULE_SECTION) {
                 return $settings;
             }
-           
+
             $settings['fastersearch.url'] = config('fastersearch.url');
             $settings['fastersearch.api_key'] = config('fastersearch.api_key');
             $settings['fastersearch.max_total_hits'] = (int)\Option::get('fastersearch.max_total_hits', \FasterSearch::DEFAULT_MAX_TOTAL_HITS);
@@ -88,7 +88,7 @@ class FasterSearchServiceProvider extends ServiceProvider
 
         // Section parameters.
         \Eventy::addFilter('settings.section_params', function($params, $section) {
-           
+
             if ($section != FS_MODULE_SECTION) {
                 return $params;
             }
@@ -106,13 +106,13 @@ class FasterSearchServiceProvider extends ServiceProvider
                 $health = json_encode($health_response);
             }
 
-            // Get rooms and test API credentials.
+            // Get rooms and tests API credentials.
             if (config('fastersearch.url') && config('fastersearch.api_key')) {
                 // Check credentials.
                 $test_response = self::apiCall('indexes', [], self::API_METHOD_GET);
 
                 if (isset($test_response['results']) && is_array($test_response['results'])) {
-                    
+
                     \Option::set('fastersearch.active', true);
 
                     // Check index.
@@ -146,7 +146,7 @@ class FasterSearchServiceProvider extends ServiceProvider
                             ->whereIn('type', self::$indexable_thread_types)
                             ->count();
                     }
-                    
+
                     // Count threads.
                     $total_threads = Thread::whereIn('type', self::$indexable_thread_types)->count();
 
@@ -223,7 +223,7 @@ class FasterSearchServiceProvider extends ServiceProvider
 
         // Rebuild index.
         \Eventy::addFilter('middleware.web.custom_handle.response', function ($prev, $request, $next) {
-            
+
             $route_name = $request->route()->getName();
 
             if ($route_name == 'settings'
@@ -412,7 +412,7 @@ class FasterSearchServiceProvider extends ServiceProvider
             } else {
                 // This part is used when the users sets specific filters in the search: Body, Subject, etc.
                 // https://github.com/freescout-helpdesk/freescout/issues/3282
-                // 
+                //
                 // Perform multi search when full-text filters are used.
                 // 1. Search using standard search: exact match on searchable fields
                 // 2. Search on full-text attributes only (subject, body, etc)
@@ -670,7 +670,7 @@ class FasterSearchServiceProvider extends ServiceProvider
         // ]);
 
         // return (int)($api_response['hits'][0]['id'] ?? 0);
-        
+
         return \Option::get('fastersearch.last_thread_id', 0);
     }
 
@@ -679,7 +679,7 @@ class FasterSearchServiceProvider extends ServiceProvider
         if (!\Option::get('fastersearch.index_created')) {
             return;
         }
-        
+
         $now = time();
 
         // Index new threads.
@@ -713,13 +713,13 @@ class FasterSearchServiceProvider extends ServiceProvider
                 break;
             }
         } while(count($threads));
-        
+
         // We need to do it here, as in do...while() it may not be set because of "break".
         \Option::set('fastersearch.last_thread_id', $last_indexed_thread_id);
 
         // Add/Update threads in the index.
         self::processEnqueuedThreads();
-        
+
         // Delete deleted threads from the index.
         self::processEnqueuedDeleteThreads();
     }
@@ -727,9 +727,9 @@ class FasterSearchServiceProvider extends ServiceProvider
     public static function processEnqueuedThreads()
     {
         $index_queue = \Option::get('fastersearch.index_queue', [], true, false);
-        
+
         if (count($index_queue)) {
-            
+
             \Option::set('fastersearch.index_queue', []);
 
             if (!\FasterSearch::isSearchEnabled()) {
@@ -785,7 +785,7 @@ class FasterSearchServiceProvider extends ServiceProvider
     public static function indexDocuments($docs)
     {
         $api_response = \FasterSearch::apiCall('indexes/'.self::INDEX_NAME.'/documents', $docs);
-        
+
         return !empty($api_response['taskUid']);
     }
 
@@ -887,7 +887,7 @@ class FasterSearchServiceProvider extends ServiceProvider
                     $doc['flwrs'][] = $follower->user_id;
                 }
             }
-            
+
             $doc = \Eventy::filter('fastersearch.thread_doc', $doc, $thread, $conv);
 
             $docs[] = $doc;
@@ -912,7 +912,7 @@ class FasterSearchServiceProvider extends ServiceProvider
 
         if (!empty($index_response['indexUid'])) {
             sleep(1);
-            
+
             // This is needed for sorting by thread id.
             // https://docs.meilisearch.com/reference/api/settings.html#update-searchable-attributes
             // \FasterSearch::apiCall('indexes/'.\FasterSearch::INDEX_NAME.'/settings/sortable-attributes', [
@@ -1036,7 +1036,7 @@ class FasterSearchServiceProvider extends ServiceProvider
             ];
 
             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $http_method);
-            if ($http_method == self::API_METHOD_POST 
+            if ($http_method == self::API_METHOD_POST
                 || $http_method == self::API_METHOD_PUT
                 || $http_method == self::API_METHOD_PATCH
             ) {
@@ -1082,7 +1082,7 @@ class FasterSearchServiceProvider extends ServiceProvider
                 'message' => __('API error:').' '.$e->getMessage()
             ];
         }
-        
+
         return $response;
     }
 

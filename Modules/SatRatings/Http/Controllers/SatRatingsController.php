@@ -45,7 +45,7 @@ class SatRatingsController extends Controller
             ]);
             $validator->setAttributeNames([
                 'ratings_text' => __('Ratings Text')
-            ]); 
+            ]);
 
             if ($validator->fails()) {
                 return redirect()->route('mailboxes.sat_ratings', ['id' => $id])
@@ -113,7 +113,7 @@ class SatRatingsController extends Controller
         ]);
         // $validator->setAttributeNames([
         //     'ratings_text' => __('Ratings Text')
-        // ]); 
+        // ]);
 
         if ($validator->fails()) {
             return redirect()->route('mailboxes.sat_ratings_trans', ['id' => $id])
@@ -173,7 +173,7 @@ class SatRatingsController extends Controller
     public function recordSave($thread_id, $hash, $rating = null)
     {
         $thread = Thread::find($thread_id);
-        // first_name - robots test
+        // first_name - robots tests
         if (!$thread || !\Hash::check($thread_id, base64_decode($hash)) || !empty(request()->first_name)) {
             $trans = \SatRatingsHelper::getDefaultTrans();
             return view('satratings::record', ['trans' => $trans, 'error' => 'Invalid request']);
@@ -219,7 +219,7 @@ class SatRatingsController extends Controller
         $trans = [];
 
         $thread = Thread::find($thread_id);
-        
+
         if (!$thread) {
             $trans = \SatRatingsHelper::getDefaultTrans();
         } else {

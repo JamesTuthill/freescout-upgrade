@@ -49,7 +49,7 @@ class ApiController extends Controller
 
     /**
      * @group Conversations
-     * 
+     *
      * List Conversations
      *
      * Request parameters can be used to filter conversations. By default conversations are sorted by createdAt (from newest to oldest): ?sortField=createdAt&sortOrder=desc
@@ -126,7 +126,7 @@ class ApiController extends Controller
      *         "number": 1
      *     }
      * }
-     * 
+     *
      * @queryParam   embed Pass comma separated values to include extra data: threads, timelogs, tags. Example: threads
      * @queryParam   mailboxId Filter conversations from a specific mailbox. Can contain multiple comma separated IDs. Example: 123
      * @queryParam   folderId Filter conversations from a specific folder ID (filtering by Custom Folder ID provided by Custom Folders Module is not possible). Example: 57
@@ -138,7 +138,7 @@ class ApiController extends Controller
      * @queryParam   customerPhone Filter conversations by customer phone number. Example: 777-777-777
      * @queryParam   customerId Filter conversations by customer ID. Example: 17
      * @queryParam   number Look up conversation by conversation number. Example: 359
-     * @queryParam   subject Look up conversations containing a text in the subject. Example: test
+     * @queryParam   subject Look up conversations containing a text in the subject. Example: tests
      * @queryParam   tag Look up conversations by tag. Example: overdue
      * @queryParam   createdByUserId Filter conversations by a user who created it. Example: 9
      * @queryParam   createdByCustomerId Filter conversations by a customer who created it. Example: 10
@@ -308,7 +308,7 @@ class ApiController extends Controller
 
     /**
      * @group Conversations
-     * 
+     *
      * Get Conversation
      *
      * @response {
@@ -417,7 +417,7 @@ class ApiController extends Controller
      *        "photoUrl" : "https://support.example.org/storage/users/5a10629fd2bae86563892b191f6677e7.jpg",
      *        "email" : "johndoe@example.org"
      *      },
-     *      "to" : [ "test@example.org" ],
+     *      "to" : [ "tests@example.org" ],
      *      "cc" : [ "fox@example.org" ],
      *      "bcc" : [ "fox@example.org" ],
      *      "createdAt" : "2020-06-05T20:18:33Z",
@@ -511,7 +511,7 @@ class ApiController extends Controller
 
     /**
      * @group Conversations
-     * 
+     *
      * Update Conversation
      *
      * Order of passed parameters (status, assignTo, etc.) determines the order in which changes are made.
@@ -519,7 +519,7 @@ class ApiController extends Controller
      * @response 204 {
      *   "headers": "HTTP/1.1 204 No Content"
      * }
-     * 
+     *
      * @bodyParam  byUser number ID of the user updating the conversation. Required when changing: "status", "assignTo" or "mailboxId". Example: 33
      * @bodyParam  status string Change conversation status: active, pending, closed, spam. Example: active
      * @bodyParam  assignTo number Change conversation assignee to the user with the specified ID. Example: 15
@@ -608,7 +608,7 @@ class ApiController extends Controller
 
     /**
      * @group Conversations
-     * 
+     *
      * Delete Conversation
      *
      * This method deletes a conversation forever.
@@ -635,7 +635,7 @@ class ApiController extends Controller
 
     /**
      * @group Conversations
-     * 
+     *
      * Create Conversation
      *
      * This method creates a conversation in a mailbox with at least one thread.
@@ -643,7 +643,7 @@ class ApiController extends Controller
      * @response 201 {
      *   "headers": "HTTP/1.1 201 Created\nResource-ID: 35"
      * }
-     * 
+     *
      * @bodyParam  type string required Conversation type: email, phone, chat (after importing "chat" conversation, support agent replies will not reach customer linked to the conversation, as connection to customer's messenger can't be imported). Example: email
      * @bodyParam  mailboxId number required ID of a mailbox where the conversation is being created. Example: 1
      * @bodyParam  subject string required Conversation’s subject. Example: Hi there
@@ -672,7 +672,7 @@ class ApiController extends Controller
             return $check_required_params;
         }
         // Threads must be sequential array.
-        if (!is_array($data['threads']) 
+        if (!is_array($data['threads'])
             || count(array_filter(array_values($data['threads']), 'is_array')) != count($data['threads'])
         ) {
             return $this->getErrorResponse("'threads' parameter must be an array", 'threads');
@@ -841,7 +841,7 @@ class ApiController extends Controller
 
     /**
      * @group Threads
-     * 
+     *
      * Create Thread
      *
      * This method adds a new customer reply, user reply or user note to a conversation.
@@ -849,7 +849,7 @@ class ApiController extends Controller
      * @response 201 {
      *   "headers": "HTTP/1.1 201 Created\nResource-ID: 25"
      * }
-     * 
+     *
      * @bodyParam  type string required Thread type: customer (customer reply), message (user reply), note (user note). Example: message
      * @bodyParam  text string required The message text. Example: Plese let us know if you have any other questions.
      * @bodyParam  customer object Customer adding the thread (required if thread 'type' is 'customer'). Customer object must contain a valid customer id or an email address: { "id": 123 } or { "email": "mark@example.org" }. If the id field is defined, the email will be ignored. If the id is not defined, email is used to look up a customer. If a customer does not exist, a new one will be created. If a customer is matched either via id or email field, the rest of the optional fields is ignored. Example: { "email": "mark@example.org" }
@@ -881,7 +881,7 @@ class ApiController extends Controller
         }
 
         $data = self::toSnake($data);
-        
+
         // Convert codes into integers.
         $data = self::convertThreadCodes($data);
 
@@ -961,7 +961,7 @@ class ApiController extends Controller
         if (!$is_customer) {
             $thread->setTo([$customer->getMainEmail()]);
         }
-        
+
         $cc = \MailHelper::sanitizeEmails($data['cc'] ?? []);
         $thread->setCc($cc);
 
@@ -1024,9 +1024,9 @@ class ApiController extends Controller
                 $conversation->has_attachments = true;
             }
         }
-        
+
         $thread->save();
-        
+
         if ($new) {
             if ($is_customer) {
                 $conversation->source_via = Conversation::PERSON_CUSTOMER;
@@ -1101,7 +1101,7 @@ class ApiController extends Controller
         // Maybe we need to trigger status change events here
         // from $conversation->setStatus().
         // For now it does not cause any issues.
-        
+
         $conversation->customer_id = $customer->id;
         if ($is_customer) {
             $conversation->customer_email = $customer->getMainEmail();
@@ -1136,7 +1136,7 @@ class ApiController extends Controller
         // if ($prev_customer_id) {
         //     event(new ConversationCustomerChanged($conversation, $prev_customer_id, $prev_customer_email, null, $customer));
         // }
-    
+
         if ($new) {
             if ($is_customer) {
                 event(new CustomerCreatedConversation($conversation, $thread));
@@ -1184,7 +1184,7 @@ class ApiController extends Controller
 
     /**
      * @group Customers
-     * 
+     *
      * List Customers
      *
      * Request parameters can be used to filter customers. By default customers are sorted by createdAt (from newest to oldest): ?sortField=createdAt&sortOrder=desc
@@ -1226,7 +1226,7 @@ class ApiController extends Controller
      *         "number": 1
      *     }
      * }
-     * 
+     *
      * @queryParam  firstName Filter customers by first name. Example: John
      * @queryParam  lastName Filter customers by last name. Example: Doe
      * @queryParam  phone Filter customers by phone number. Example: 777-777-777
@@ -1314,7 +1314,7 @@ class ApiController extends Controller
 
     /**
      * @group Customers
-     * 
+     *
      * Get Customer
      *
      * @response {
@@ -1393,7 +1393,7 @@ class ApiController extends Controller
 
     /**
      * @group Customers
-     * 
+     *
      * Create Customer
      *
      * This method does not update existing customers. Method makes sure that the email address is unique and does not check uniqueness of other parameters. If the request contains email(s) and customers with all these emails already exist, no customer will be created.
@@ -1403,7 +1403,7 @@ class ApiController extends Controller
      * @response 201 {
      *   "headers": "HTTP/1.1 201 Created\nResource-ID: 17"
      * }
-     * 
+     *
      * @bodyParam  firstName string First name of the customer (max 40 characters). Example: Mark
      * @bodyParam  lastName string Last name of the customer (max 40 characters). Example: Morrison
      * @bodyParam  phone string Phone number. Example: 777-777-777
@@ -1422,7 +1422,7 @@ class ApiController extends Controller
     {
         $data = $request->all();
         $data = self::toSnake($data);
-        
+
         // Convert codes into integers.
         // https://github.com/freescout-helpdesk/freescout/issues/3977
         if (!$codes_converted) {
@@ -1458,7 +1458,7 @@ class ApiController extends Controller
                     }
                 }
             }
-            
+
             if (!$email_ok) {
                 return $this->getApiResponse(self::getErrorBody('Error occurred', [[
                     'path'    => 'emails',
@@ -1528,13 +1528,13 @@ class ApiController extends Controller
 
     /**
      * @group Customers
-     * 
+     *
      * Update Customer
      *
      * @response 204 {
      *   "headers": "HTTP/1.1 204 No Content"
      * }
-     * 
+     *
      * @bodyParam  firstName string First name of the customer (max 40 characters). Example: Mark
      * @bodyParam  lastName string Last name of the customer (max 40 characters). Example: Morrison
      * @bodyParam  phone string Phone number. Example: 777-777-777
@@ -1612,13 +1612,13 @@ class ApiController extends Controller
 
     /**
      * @group Customers
-     * 
+     *
      * Update Customer Fields
      *
      * @response 204 {
      *   "headers": "HTTP/1.1 204 No Content"
      * }
-     * 
+     *
      * @bodyParam  customerFields array required List of customer fields to be updated. Example: [{"id": 37, "value": "Test value"}]
      */
     public function updateCustomerFields(Request $request, $customerId)
@@ -1657,7 +1657,7 @@ class ApiController extends Controller
 
     /**
      * @group Users
-     * 
+     *
      * Create User
      *
      * This method does not update existing users. Method makes sure that the email address is unique and does not check uniqueness of other parameters. Method creates only regular Users and does not allow to create Administrators. No invitation email is being sent upon user creation. Created user does not have permissions to access any mailboxes by default.
@@ -1665,7 +1665,7 @@ class ApiController extends Controller
      * @response 201 {
      *   "headers": "HTTP/1.1 201 Created\nResource-ID: 17"
      * }
-     * 
+     *
      * @bodyParam  firstName string required First name of the user. Example: John
      * @bodyParam  lastName string required Last name of the user. Example: Doe
      * @bodyParam  email string required Email address. Example: johndoe@example.org
@@ -1691,7 +1691,7 @@ class ApiController extends Controller
         }
 
         $data = self::toSnake($data);
-        
+
         // Convert codes into integers.
         $data = self::convertUserCodes($data);
 
@@ -1761,7 +1761,7 @@ class ApiController extends Controller
 
     /**
      * @group Users
-     * 
+     *
      * Get User
      *
      * @response {
@@ -1801,7 +1801,7 @@ class ApiController extends Controller
 
     /**
      * @group Users
-     * 
+     *
      * List Users
      *
      * Request parameters can be used to filter users.
@@ -1833,7 +1833,7 @@ class ApiController extends Controller
      *         "number": 1
      *     }
      * }
-     * 
+     *
      * @queryParam  email Look up user by email. Example: johndoe@example.org
      * @queryParam  page Page number. Example: 1
      * @queryParam  pageSize Page size (defaults to 50). Example: 100
@@ -1868,7 +1868,7 @@ class ApiController extends Controller
 
     /**
      * @group Users
-     * 
+     *
      * Delete User
      *
      * This method deletes a user.
@@ -1912,7 +1912,7 @@ class ApiController extends Controller
 
     /**
      * @group Mailboxes
-     * 
+     *
      * List Mailbox Custom Fields
      *
      * #### Response Fields
@@ -1925,7 +1925,7 @@ class ApiController extends Controller
      * options | object | Contains options for dropdown custom fields.
      * required | boolean | Specifies if the custom field has to be filled.
      * sortOrder | number | Order of the custom field when displayed in the app.
-     * 
+     *
      * @response {
      *     "_embedded": {
      *         "custom_fields": [
@@ -2021,9 +2021,9 @@ class ApiController extends Controller
 
     /**
      * @group Mailboxes
-     * 
+     *
      * List Mailbox Folders
-     * 
+     *
      * @response {
      *    "_embedded": {
      *         "folders": [
@@ -2156,7 +2156,7 @@ class ApiController extends Controller
 
     /**
      * @group Mailboxes
-     * 
+     *
      * List Mailboxes
      *
      * Method returns mailboxes sorted by id. Request parameters can be used to filter mailboxes.
@@ -2180,7 +2180,7 @@ class ApiController extends Controller
      *         "number": 1
      *     }
      * }
-     * 
+     *
      * @queryParam  userId Get maiboxes to which specified user has an access. Example: 7
      * @queryParam   page Page number. Example: 1
      * @queryParam   pageSize Page size (defaults to 50). Example: 100
@@ -2226,7 +2226,7 @@ class ApiController extends Controller
 
     /**
      * @group Tags
-     * 
+     *
      * List Tags
      *
      * Method returns tags sorted by id.
@@ -2249,7 +2249,7 @@ class ApiController extends Controller
      *         "number": 1
      *     }
      * }
-     * 
+     *
      * @queryParam  conversationId Conversation ID. Example: 7
      * @queryParam   page Page number. Example: 1
      * @queryParam   pageSize Page size (defaults to 50). Example: 100
@@ -2261,7 +2261,7 @@ class ApiController extends Controller
         if (!$request->isMethod('get')) {
             return $this->methodNotAllowed();
         }
-        
+
         $response_data = [
             '_embedded' => [
                 'tags' => []
@@ -2295,7 +2295,7 @@ class ApiController extends Controller
 
     /**
      * @group Tags
-     * 
+     *
      * Update Conversation Tags
      *
      * This method allows to update tags for a conversation. The full list of tags must be sent in the request. If some tag specified does not exist it will be first created and then applied to the conversation. Any conversation tags which are not listed in the request will be removed. Send an empty list of tags to remove all tags.
@@ -2303,7 +2303,7 @@ class ApiController extends Controller
      * @response 204 {
      *   "headers": "HTTP/1.1 204 No Content"
      * }
-     * 
+     *
      * @bodyParam  tags array required List of tags (tag names) to be applied to the conversation. Example: ["overdue", "refund"]
      */
     public function updateTags(Request $request, $conversationId)
@@ -2357,13 +2357,13 @@ class ApiController extends Controller
 
     /**
      * @group Webhooks
-     * 
+     *
      * Create Webhook
      *
      * @response 201 {
      *   "headers": "HTTP/1.1 201 Created\nResource-ID: 17"
      * }
-     * 
+     *
      * @bodyParam  url string required URL that will be called when any of the events occur. Example: https://example.org/freescout
      * @bodyParam  events array required List of events to track: convo.assigned, convo.created, convo.deleted, convo.moved, convo.status, convo.customer.reply.created, convo.agent.reply.created, convo.note.created, customer.created, customer.updated. Example: ["convo.created"]
      */
@@ -2400,7 +2400,7 @@ class ApiController extends Controller
 
     /**
      * @group Webhooks
-     * 
+     *
      * Delete Webhook
      *
      * @response 204 {
@@ -2424,13 +2424,13 @@ class ApiController extends Controller
 
     /**
      * @group Custom Fields
-     * 
+     *
      * Update Custom Fields
      *
      * @response 204 {
      *   "headers": "HTTP/1.1 204 No Content"
      * }
-     * 
+     *
      * @bodyParam  customFields array required List of custom fields to be applied to the conversation. When updating a custom filed with type  "Dropdown", in the value field you must provide a number (ID), not a textual value. Example: [{"id": 37, "value": "Test value"}]
      */
     public function updateCustomFields(Request $request, $conversationId)
@@ -2469,7 +2469,7 @@ class ApiController extends Controller
 
     /**
      * @group Timelogs
-     * 
+     *
      * List Conversation Timelogs
      *
      * Get Time Tracking Module timelogs for a conversation. Timelogs are sorted from newest to oldest.
@@ -2506,7 +2506,7 @@ class ApiController extends Controller
      *         "number": 1
      *     }
      * }
-     * 
+     *
      * @queryParam   page Page number. Example: 1
      * @queryParam   pageSize Page size (defaults to 50). Example: 100
      */
@@ -2534,7 +2534,7 @@ class ApiController extends Controller
             ->orderBy('id', 'desc');
 
         $timelogs = $query->paginate($request->pageSize ?: self::PAGE_SIZE);
-        
+
         foreach ($timelogs as $timelog) {
             $response_data['_embedded']['timelogs'][] = \ApiWebhooks::formatEntity($timelog, false);
         }

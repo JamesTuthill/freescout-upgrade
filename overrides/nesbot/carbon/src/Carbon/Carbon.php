@@ -223,7 +223,7 @@ class Carbon extends DateTime implements JsonSerializable
     );
 
     /**
-     * A test Carbon instance to be returned when now instances are created.
+     * A tests Carbon instance to be returned when now instances are created.
      *
      * @var \Carbon\Carbon
      */
@@ -497,14 +497,14 @@ class Carbon extends DateTime implements JsonSerializable
      * Create a new Carbon instance.
      *
      * Please see the testing aids section (specifically static::setTestNow())
-     * for more on the possibility of this constructor returning a test instance.
+     * for more on the possibility of this constructor returning a tests instance.
      *
      * @param string|null               $time
      * @param \DateTimeZone|string|null $tz
      */
     public function __construct($time = null, $tz = null)
     {
-        // If the class has a test now set and we are trying to create a now()
+        // If the class has a tests now set and we are trying to create a now()
         // instance then override as required
         $isNow = empty($time) || $time === 'now';
         if (static::hasTestNow() && ($isNow || static::hasRelativeKeywords($time))) {
@@ -884,8 +884,8 @@ class Carbon extends DateTime implements JsonSerializable
         // https://github.com/freescout-helpdesk/freescout/issues/3702
         if ($format == 'Y-m-d H:i:s' && strlen($time) > 19) {
             $time = substr($time, 0, 19);
-        } 
-        
+        }
+
         // First attempt to create an instance, so that error messages are based on the unmodified format.
         $date = self::createFromFormatAndTimezone($format, $time, $tz);
         $lastErrors = parent::getLastErrors();
@@ -1572,7 +1572,7 @@ class Carbon extends DateTime implements JsonSerializable
      * Note the timezone parameter was left out of the examples above and
      * has no affect as the mock value will be returned regardless of its value.
      *
-     * To clear the test instance call this method using the default
+     * To clear the tests instance call this method using the default
      * parameter of null.
      *
      * @param \Carbon\Carbon|null        $testNow real or mock Carbon instance
@@ -1595,10 +1595,10 @@ class Carbon extends DateTime implements JsonSerializable
     }
 
     /**
-     * Determine if there is a valid test instance set. A valid test instance
+     * Determine if there is a valid tests instance set. A valid tests instance
      * is anything that is not null.
      *
-     * @return bool true if there is a test instance, otherwise false
+     * @return bool true if there is a tests instance, otherwise false
      */
     public static function hasTestNow()
     {
@@ -1856,7 +1856,7 @@ class Carbon extends DateTime implements JsonSerializable
         // https://php.watch/versions/8.1/strftime-gmstrftime-deprecated
         //$formatted = strftime($format, strtotime($this->toDateTimeString()));
         $formatter = new \IntlDateFormatter(
-            config('app.locale'), 
+            config('app.locale'),
             \IntlDateFormatter::LONG,
             \IntlDateFormatter::NONE,
             config('app.timezone'),
@@ -2631,7 +2631,7 @@ class Carbon extends DateTime implements JsonSerializable
      * Checks if the passed in date is in the same month as the instance´s month.
      *
      * Note that this defaults to only comparing the month while ignoring the year.
-     * To test if it is the same exact month of the same year, pass in true as the second parameter.
+     * To tests if it is the same exact month of the same year, pass in true as the second parameter.
      *
      * @param \Carbon\Carbon|\DateTimeInterface|null $date       The instance to compare with or null to use the current date.
      * @param bool                                   $ofSameYear Check if it is the same month in the same year.

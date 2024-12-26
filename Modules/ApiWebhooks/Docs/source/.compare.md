@@ -58,12 +58,12 @@ There are three ways to authenticate using API Key to make API calls:
       <td><code>POST</code></td>
       <td>Create new entity.</td>
     </tr>
-    
+
     <tr>
       <td><code>DELETE</code></td>
       <td>Delete single entity.</td>
     </tr>
-    
+
     <tr>
       <td><code>OPTIONS</code></td>
       <td>Returns allowed HTTP methods and <code>Access-Control-*</code> headers for <code>CORS</code> preflight request.</td>
@@ -147,13 +147,13 @@ There are three ways to authenticate using API Key to make API calls:
       <td>Unsupported Media Type</td>
       <td>The API is unable to work with the provided payload.</td>
     </tr>
-    
+
     <tr>
       <td><code>500</code></td>
       <td>Internal Server Error</td>
       <td>Whoops, looks like something went wrong on our end.</td>
     </tr>
-    
+
     <tr>
       <td><code>504</code></td>
       <td>Gateway Timeout</td>
@@ -348,27 +348,27 @@ $response = $client->post("https://demo.freescout.net/api/conversations", [
    'email' => 'mark@example.org',
 ),
                     "threads" => array (
-  0 => 
+  0 =>
   array(
      'text' => 'This is the message from a user',
      'type' => 'message',
      'user' => 7,
   ),
-  1 => 
+  1 =>
   array(
      'text' => 'This is the note from a user',
      'type' => 'note',
      'user' => 7,
   ),
-  2 => 
+  2 =>
   array(
      'text' => 'This is the message from a customer',
      'type' => 'customer',
-     'cc' => 
+     'cc' =>
     array (
       0 => 'antony@example.org',
     ),
-     'customer' => 
+     'customer' =>
     array(
        'email' => 'mark@example.org',
        'firstName' => 'Mark',
@@ -379,12 +379,12 @@ $response = $client->post("https://demo.freescout.net/api/conversations", [
                     "assignTo" => "15",
                     "status" => "active",
                     "customFields" => array (
-  0 => 
+  0 =>
   array(
      'id' => 37,
      'value' => 'Some text',
   ),
-  1 => 
+  1 =>
   array(
      'id' => 18,
      'value' => 3,
@@ -593,7 +593,7 @@ print_r(json_decode((string) $body));
                     "email": "johndoe@example.org"
                 },
                 "to": [
-                    "test@example.org"
+                    "tests@example.org"
                 ],
                 "cc": [
                     "fox@example.org"
@@ -737,7 +737,7 @@ $response = $client->get("https://demo.freescout.net/api/conversations", [
             "customerPhone" => "777-777-777",
             "customerId" => "17",
             "number" => "359",
-            "subject" => "test",
+            "subject" => "tests",
             "tag" => "overdue",
             "createdByUserId" => "9",
             "createdByCustomerId" => "10",
@@ -1057,7 +1057,7 @@ $response = $client->put("https://demo.freescout.net/api/conversations/1/custom_
         ],
     'json' => [
                 "customFields" => array (
-  0 => 
+  0 =>
   array(
      'id' => 37,
      'value' => 'Test value',
@@ -1190,28 +1190,28 @@ $response = $client->post("https://demo.freescout.net/api/customers", [
                     "notes" => "Nothing special to say",
                     "company" => "Example, Inc",
                     "emails" => array (
-  0 => 
+  0 =>
   array(
      'value' => 'mark@example.org',
      'type' => 'home',
   ),
 ),
                     "phones" => array (
-  0 => 
+  0 =>
   array(
      'value' => '777-777-777',
      'type' => 'home',
   ),
 ),
                     "socialProfiles" => array (
-  0 => 
+  0 =>
   array(
      'value' => '@markexample',
      'type' => 'twitter',
   ),
 ),
                     "websites" => array (
-  0 => 
+  0 =>
   array(
      'value' => 'https://example.org',
   ),
@@ -1599,21 +1599,21 @@ $response = $client->put("https://demo.freescout.net/api/customers/1", [
   1 => 'mark.new2@example.org',
 ),
                     "phones" => array (
-  0 => 
+  0 =>
   array(
      'value' => '777-777-777',
      'type' => 'home',
   ),
 ),
                     "socialProfiles" => array (
-  0 => 
+  0 =>
   array(
      'value' => '@markexample',
      'type' => 'twitter',
   ),
 ),
                     "websites" => array (
-  0 => 
+  0 =>
   array(
      'value' => 'https://example.org',
   ),
@@ -1704,7 +1704,7 @@ $response = $client->put("https://demo.freescout.net/api/customers/1/customer_fi
         ],
     'json' => [
                 "customerFields" => array (
-  0 => 
+  0 =>
   array(
      'id' => 37,
      'value' => 'Test value',
@@ -2365,13 +2365,13 @@ $response = $client->post("https://demo.freescout.net/api/conversations/1/thread
 ),
                     "createdAt" => "2020-03-16T14:07:23Z",
                     "attachments" => array (
-  0 => 
+  0 =>
   array(
      'fileName' => 'file.txt',
      'mimeType' => 'plain/text',
      'data' => 'ZmlsZQ==',
   ),
-  1 => 
+  1 =>
   array(
      'fileName' => 'file2.txt',
      'mimeType' => 'plain/text',
@@ -2409,7 +2409,7 @@ Parameter | Type | Required | Description
     cc | array |  | List of CC email addresses.
     bcc | array |  | List of BCC email addresses.
     createdAt | string |  | Creation date to be used when importing conversations and threads in ISO 8601 date time format (can be used only when 'imported' field is set to true).
-    attachments | array |  | List of attachments to be attached to the thread. Attachment content can be passed in "data" parameter as BASE64 encoded string or as URL in "fileUrl" parameter. 
+    attachments | array |  | List of attachments to be attached to the thread. Attachment content can be passed in "data" parameter as BASE64 encoded string or as URL in "fileUrl" parameter.
 
 <!-- END_2c8f7daedab7955b7ef939aaacd9da94 -->
 

@@ -523,7 +523,7 @@ class Helper
     {
         // Remove all kinds of spaces after tags.
         // https://stackoverflow.com/questions/3230623/filter-all-types-of-whitespace-in-php
-        // 
+        //
         // Keep in mind that preg_replace() may return NULL if "u" flag is used.
         $text = preg_replace("/^(.*)>[\r\n]*\s+/mu", '$1>', $text ?? '');
 
@@ -723,7 +723,7 @@ class Helper
     /**
      * Create zip archive.
      * Source example: public/files/*
-     * File name example: test.zip.
+     * File name example: tests.zip.
      * storage_path without app/
      */
     public static function createZipArchive($source, $file_name, $folder = '', $storage_file_path = '')
@@ -901,7 +901,7 @@ class Helper
 
         try {
             $file = $path.DIRECTORY_SEPARATOR.'.writable_test';
-            if ($file && file_put_contents($file, 'test')) {
+            if ($file && file_put_contents($file, 'tests')) {
                 unlink($file);
 
                 return true;
@@ -1341,7 +1341,7 @@ class Helper
         $html = \Purifier::clean($html);
 
         // It's not clear why it was needed to remove spaces after tags.
-        // 
+        //
         // Remove all kinds of spaces after tags
         // https://stackoverflow.com/questions/3230623/filter-all-types-of-whitespace-in-php
         //$html = preg_replace("/^(.*)>[\r\n]*\s+/mu", '$1>', $html);
@@ -1387,11 +1387,11 @@ class Helper
             switch ($protocol) {
                 case 'http':
                 case 'https':
-                    //$value = preg_replace_callback('~(?:(https?)://([^\s<]+)|(www\.[^\s<]+?\.[^\s<]+))(?<![\.,:])~i', function ($match) use ($protocol, &$links, $attr) { 
-                    //$value = preg_replace_callback('%(\b(([\w-]+)://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))%s', function ($match) use ($protocol, &$links, $attr) { 
+                    //$value = preg_replace_callback('~(?:(https?)://([^\s<]+)|(www\.[^\s<]+?\.[^\s<]+))(?<![\.,:])~i', function ($match) use ($protocol, &$links, $attr) {
+                    //$value = preg_replace_callback('%(\b(([\w-]+)://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))%s', function ($match) use ($protocol, &$links, $attr) {
                     // https://github.com/freescout-helpdesk/freescout/issues/3402
                     $nbsp = html_entity_decode('&nbsp;');
-                    $value = preg_replace_callback('%([>\r\n\s:;\( '.$nbsp.']|^)((([\w-]+)://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))%s', function ($match) use ($protocol, &$links, $attr) { 
+                    $value = preg_replace_callback('%([>\r\n\s:;\( '.$nbsp.']|^)((([\w-]+)://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))%s', function ($match) use ($protocol, &$links, $attr) {
                             if ($match[4]) {
                                 $protocol = $match[4];
                             }
@@ -1502,7 +1502,7 @@ class Helper
         // Any image can be interpreted as SVG by browser,
         // so checking extension is not enough.
         if ($storage->exists($file_path)
-            && ($storage->mimeType($file_path) == 'image/svg+xml' 
+            && ($storage->mimeType($file_path) == 'image/svg+xml'
                 || strtolower(pathinfo($file_path, PATHINFO_EXTENSION)) == 'svg')
         ) {
             if (!$content) {
@@ -1655,7 +1655,7 @@ class Helper
         }
     }
 
-    // Replacement for file_get_contents() as some hostings 
+    // Replacement for file_get_contents() as some hostings
     // do not allow reading remote files via allow_url_fopen option.
     public static function getRemoteFileContents($url)
     {
@@ -1840,7 +1840,7 @@ class Helper
     public static function isCurrentUrlHttps()
     {
         if (in_array(strtolower($_SERVER['X_FORWARDED_PROTO'] ?? ''), array('https', 'on', 'ssl', '1'), true)
-            || strtolower($_SERVER['HTTPS'] ?? '') == 'on' 
+            || strtolower($_SERVER['HTTPS'] ?? '') == 'on'
             || ($_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '') == 'https'
             || ($_SERVER['HTTP_CF_VISITOR'] ?? '') == '{"scheme":"https"}'
         ) {
@@ -2072,7 +2072,7 @@ class Helper
     {
         $output_buffer = new BufferedOutput();
         \Artisan::call($command, $options, $output_buffer);
-        
+
         return $output_buffer->fetch();
     }
 
@@ -2081,8 +2081,8 @@ class Helper
         // Curl has default CURLOPT_CONNECTTIMEOUT=30 seconds.
         curl_setopt($ch, CURLOPT_TIMEOUT, config('app.curl_timeout'));
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, config('app.curl_connect_timeout'));
-        curl_setopt($ch, CURLOPT_PROXY, config('app.proxy'));        
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, config('app.curl_ssl_verifypeer'));        
+        curl_setopt($ch, CURLOPT_PROXY, config('app.proxy'));
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, config('app.curl_ssl_verifypeer'));
     }
 
     public static function setGuzzleDefaultOptions($params = [])

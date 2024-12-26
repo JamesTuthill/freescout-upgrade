@@ -306,7 +306,7 @@ $(document).ready(function(){
 	// Search button
 	$('#search-dt').click(function() {
 		var dt = $(this);
-		setTimeout(function() { 
+		setTimeout(function() {
 			dt.next().children().find('.form-control:first').focus();
 		}, 100);
 	});
@@ -326,7 +326,7 @@ $(document).ready(function(){
 	if ($('#conv-layout-customer').length && $(window).outerWidth() >= 1100 && $('.conv-sidebar-block').length > 2) {
 		adjustCustomerSidebarHeight();
 		setTimeout(adjustCustomerSidebarHeight, 2000);
-	}                                                   
+	}
 });
 
 /*function applyVoidLinks()
@@ -360,7 +360,7 @@ function initMuteMailbox()
 			function(response) {
 				button.button('reset');
 				if (isAjaxSuccess(response)) {
-					setTimeout(function(){ 
+					setTimeout(function(){
 						button.children('span').addClass('hidden');
 						var new_mute;
 						if (mute == 1) {
@@ -400,7 +400,7 @@ function triggersInit()
 {
 	// Tooltips
     initTooltips();
-    
+
     var handler = function() {
 	  return $('body [data-toggle="tooltip"]').tooltip('hide');
 	};
@@ -653,7 +653,7 @@ function mailboxConnectionInit(out_method_smtp)
 			}
 		});
 
-	    $('#send-test-trigger').click(function(event) {
+	    $('#send-tests-trigger').click(function(event) {
 	    	var button = $(this);
 	    	button.button('loading');
 	    	$('#send_test_log').addClass('hidden');
@@ -798,7 +798,7 @@ function mailSettingsInit()
 		});
 
 	    // Test Email
-		$('#send-test-trigger').click(function(event) {
+		$('#send-tests-trigger').click(function(event) {
 	    	var button = $(this);
 	    	button.button('loading');
 	    	$('#send_test_log').addClass('hidden');
@@ -1412,7 +1412,7 @@ function initConversation()
 				) {
 					return;
 				}
-				
+
 				if (e.which == 13
 					&& !e.shiftKey
 					&& $(e.target).attr('contentEditable') == 'true'
@@ -1818,7 +1818,7 @@ function convEditorInit()
 			});
 		}
 	});
-	
+
 	// select2 does not react on keyup or keypress
 	$(".recipient-select, .draft-changer").on('change', function(event) {
 		onReplyChange();
@@ -2205,7 +2205,7 @@ function initReplyForm(load_attachments, init_customer_selector, is_new_conv)
 
 		// Send reply, new conversation or note
 	    $(".btn-reply-submit").click(function(e) {
-	
+
 	    	// This is extra protection from double click on Send button
 	    	// DOM operation are slow sometimes
 	    	if (fs_processing_send_reply) {
@@ -2382,7 +2382,7 @@ function getQueryParam(name, qs) {
     	if (param.match(/^__proto__\[/i)) {
     		continue;
     	}
-    	
+
     	// Two dimentional
     	var m = param.match(/^([^\[]+)\[([^\[]+)\]$/i);
 
@@ -2850,7 +2850,7 @@ function loadCustomers(page, table)
 	}
 	/*var datas = table.data();
 	for (data_name in datas) {
-		if (/^filter_/.test(data_name)) {
+		if (/^filter_/.tests(data_name)) {
 			filter[data_name.replace(/^filter_/, '')] = datas[data_name];
 		}
 	}*/
@@ -2982,7 +2982,7 @@ function changeCustomerInit()
 					if (typeof(response.status) != "undefined" && response.status == 'success') {
 						conversationChangeCustomer(response.email);
 					}
-					
+
 					ajaxFinish();
 				}
 			);
@@ -3749,7 +3749,7 @@ function polycastInit()
 		    }
 
 		    // Update assignee if needed
-		    if (typeof(data.conversation_user_id) != "undefined" && data.conversation_user_id 
+		    if (typeof(data.conversation_user_id) != "undefined" && data.conversation_user_id
 		    	&& parseInt(data.conversation_user_id) != convGetUserId()
 		    ) {
 		    	$('#conv-assignee .conv-user li.active').removeClass('active');
@@ -3760,7 +3760,7 @@ function polycastInit()
 		    }
 
 		    // Update status if needed
-		    if (typeof(data.conversation_status) != "undefined" && data.conversation_status 
+		    if (typeof(data.conversation_status) != "undefined" && data.conversation_status
 		    	&& parseInt(data.conversation_status) != convGetStatus()
 		    ) {
 		    	$('#conv-status .conv-status li.active').removeClass('active');
@@ -3770,14 +3770,14 @@ function polycastInit()
 		    	// Update class
 		    	if (data.conversation_status_class) {
 					$.each($('#conv-status .btn'), function(index, btn) {
-						var classes = $(btn).attr('class').split(/\s+/); 
+						var classes = $(btn).attr('class').split(/\s+/);
 						$.each(classes, function(index, item_class) {
 							if (item_class.indexOf('btn-') != -1 && item_class != 'btn-light') {
 								$(btn).removeClass(item_class);
 							}
-						});   
+						});
 					});
-		    	
+
 		    		$('#conv-status .btn').addClass('btn-'+data.conversation_status_class);
 		    	}
 		    	// Update icon
@@ -3839,7 +3839,7 @@ function polycastInit()
 		    	var header_html = chats.children('li:first').prop('outerHTML');
 
 		    	chats.html(header_html+data.chats_html);
-		    	
+
 		    	var active_chat = chats.children('li[data-chat_id="'+chat_id+'"]');
 		    	active_chat.addClass('active');
 
@@ -4190,7 +4190,7 @@ function saveDraft(reload_page, no_loader, do_not_save_empty)
 
 	// Do not auto-save draft is there is no thread_id, body and attachments.
 	if (typeof(do_not_save_empty) != "undefined") {
-		if (!$('.form-reply:visible:first :input[name="thread_id"]:first').val() 
+		if (!$('.form-reply:visible:first :input[name="thread_id"]:first').val()
 			&& !$('#body').val()
 			&& !$('.form-reply:visible:first .thread-attachments li.attachment-loaded:first').length
 			&& !$('#to').val()
@@ -4572,7 +4572,7 @@ function editThread(button)
 function deleteThread(button)
 {
 	var thread_container = button.parents('.thread:first');
-	
+
 	button.button('loading');
 
 	fsAjax({
@@ -4972,7 +4972,7 @@ function rememberNote()
 	if (!fs_autosave_note) {
 		return;
 	}
-	
+
 	var conversation_id = getGlobalAttr('conversation_id');
 	if (!conversation_id) {
 		return;
@@ -5459,7 +5459,7 @@ function setCookie(name, value, props)
         d.setTime(d.getTime() + exp*1000);
         exp = props.expires = d;
     }
-    if (exp && exp.toUTCString) { 
+    if (exp && exp.toUTCString) {
     	props.expires = exp.toUTCString();
     }
 

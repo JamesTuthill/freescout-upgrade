@@ -14,7 +14,7 @@ class ConfigTest extends TestCase
     protected $app_key_file_content;
 
     /**
-     * A basic test example.
+     * A basic tests example.
      *
      * @return void
      */

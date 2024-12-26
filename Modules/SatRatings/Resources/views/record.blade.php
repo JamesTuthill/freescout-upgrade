@@ -29,7 +29,7 @@
 			        <input type="radio" name="rating" value="{{ \SatRatingsHelper::RATING_BAD }}"> {{ $trans['level_bad'] }}<br/>
 			    </label>
 			</div>
-			{{-- Robots test --}}
+			{{-- Robots tests --}}
 			<input type="text" name="first_name" id="satr-first-name">
 
         	<p>{{ $trans['comment'] }}</p>
@@ -45,5 +45,5 @@
         	</p>
         </form>
     @endif
-  
+
 @endsection

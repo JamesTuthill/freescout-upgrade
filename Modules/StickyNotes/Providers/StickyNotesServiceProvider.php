@@ -41,7 +41,7 @@ class StickyNotesServiceProvider extends ServiceProvider
             }
             ?>
             <li>
-                <a href="<?php echo route('test', ['thread_id' => $thread->id]) ?>"><?php echo __("Pin") ?></a>
+                <a href="<?php echo route('tests', ['thread_id' => $thread->id]) ?>"><?php echo __("Pin") ?></a>
             </li>
             <?php
         });*/
@@ -100,12 +100,12 @@ class StickyNotesServiceProvider extends ServiceProvider
             if (!empty($thread->meta['sn.pinned'])) {
                 $url_data['sn_action'] = 'unpin';
                 ?>
-                <a href="?<?php echo http_build_query($url_data) ?>" class="thread-info-icon link-active" data-toggle="tooltip" title="<?php echo __('Unpin') ?>"><i class="glyphicon glyphicon-pushpin"></i></a> 
+                <a href="?<?php echo http_build_query($url_data) ?>" class="thread-info-icon link-active" data-toggle="tooltip" title="<?php echo __('Unpin') ?>"><i class="glyphicon glyphicon-pushpin"></i></a>
                 <?php
             } else {
                 $url_data['sn_action'] = 'pin';
                 ?>
-                <a href="?<?php echo http_build_query($url_data) ?>" class="thread-info-icon" data-toggle="tooltip" title="<?php echo __('Pin to Top') ?>"><i class="glyphicon glyphicon-pushpin"></i></a> 
+                <a href="?<?php echo http_build_query($url_data) ?>" class="thread-info-icon" data-toggle="tooltip" title="<?php echo __('Pin to Top') ?>"><i class="glyphicon glyphicon-pushpin"></i></a>
                 <?php
             }
         });

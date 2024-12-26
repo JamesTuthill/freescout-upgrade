@@ -67,7 +67,7 @@ var LangMessages = {
             "yes": "{{ __("Yes") }}",
             "confirm_delete_photo": "{{ __("Delete this photo?") }}",
             "delete": "{{ __("Delete") }}",
-            "email_sent": "{{ __("Email passed for delivery. If you don't receive a test email, check your mail server logs.") }}",
+            "email_sent": "{{ __("Email passed for delivery. If you don't receive a tests email, check your mail server logs.") }}",
             "connection_established": "{{ __("Connection established!") }}",
             "confirm_delete_conversation": "{{ __("Delete this conversation?") }}",
             "drag_image_file": "{{ __("Drag image or file here") }}",

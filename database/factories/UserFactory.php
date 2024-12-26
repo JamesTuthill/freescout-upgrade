@@ -23,3 +23,29 @@ $factory->define(App\User::class, function (Faker $faker) {
         'password'   => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
     ];
 });
+
+$factory->state(App\User::class, 'admin', function ($faker) {
+    return [
+        'first_name' => 'Admin',
+        'role' => 2 ,//ROLE 2 = ADMIN
+    ];
+});
+
+$factory->state(App\User::class, 'not_admin', function ($faker) {
+    return [
+        'first_name' => 'Not_Admin',
+        'role' => 3 ,//ROLE 2 = ADMIN
+    ];
+});
+
+$factory->state(App\User::class, 'has_saved_reply_permission', function ($faker) {
+    return [
+        'permissions' => [3]
+    ];
+});
+
+$factory->state(App\User::class, 'does_not_have_saved_reply_permission', function ($faker) {
+    return [
+        'permissions' => [99999]
+    ];
+});

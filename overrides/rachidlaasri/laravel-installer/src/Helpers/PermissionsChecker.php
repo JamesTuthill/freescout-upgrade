@@ -70,7 +70,7 @@ class PermissionsChecker
                 \File::makeDirectory($path, 0775, true);
             }
             $file = $path.'.installer_test';
-            if ($file && file_put_contents($file, 'test')) {
+            if ($file && file_put_contents($file, 'tests')) {
                 unlink($file);
 
                 return true;

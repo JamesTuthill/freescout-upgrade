@@ -457,7 +457,7 @@ function find(array, pred) {
     }
 }
 /**
- * returns true if all of the values in the array pass the predicate truth test.
+ * returns true if all of the values in the array pass the predicate truth tests.
  */
 function all(array, pred) {
     for (var idx = 0, len = array.length; idx < len; idx++) {
@@ -3772,7 +3772,7 @@ var Editor = /** @class */ (function () {
             })(idx);
             this.context.memo('help.formatH' + idx, this.lang.help['formatH' + idx]);
         }
-        
+
         this.insertParagraph = this.wrapCommand(function () {
             _this.typing.insertParagraph(_this.editable);
         });

@@ -127,7 +127,7 @@ class Mail
                         $mailbox->setMetaParam('oauth', $token_data, true);
                     } elseif (!empty($token_data['error'])) {
                         $error_message = 'Error occurred refreshing oAuth Access Token: '.$token_data['error'];
-                        \Helper::log(\App\ActivityLog::NAME_EMAILS_SENDING, 
+                        \Helper::log(\App\ActivityLog::NAME_EMAILS_SENDING,
                             \App\ActivityLog::DESCRIPTION_EMAILS_SENDING_ERROR_TO_CUSTOMER, [
                             'error'   => $error_message,
                             'mailbox' => $mailbox->name,
@@ -335,7 +335,7 @@ class Mail
     }
 
     /**
-     * Send test email from mailbox.
+     * Send tests email from mailbox.
      */
     public static function sendTestMail($to, $mailbox = null)
     {
@@ -427,7 +427,7 @@ class Mail
             if (method_exists($client, 'getLastError')) {
                 $last_error = $client->getLastError();
             }
-            
+
             if ($last_error && stristr($last_error, 'The specified charset is not supported')) {
                 // Solution for MS mailboxes.
                 // https://github.com/freescout-helpdesk/freescout/issues/176
@@ -750,7 +750,7 @@ class Mail
                     $mailbox->setMetaParam('oauth', $token_data, true);
                 } elseif (!empty($token_data['error'])) {
                     $error_message = 'Error occurred refreshing oAuth Access Token: '.$token_data['error'];
-                    \Helper::log(\App\ActivityLog::NAME_EMAILS_FETCHING, 
+                    \Helper::log(\App\ActivityLog::NAME_EMAILS_FETCHING,
                         \App\ActivityLog::DESCRIPTION_EMAILS_FETCHING_ERROR, [
                         'error'   => $error_message,
                         'mailbox' => $mailbox->name,
@@ -900,7 +900,7 @@ class Mail
                 if (!empty($post_params['refresh_token'])) {
                     $post_params['grant_type'] = 'refresh_token';
                 }
-                
+
                 // $postUrl = "/common/oauth2/token";
                 // $hostname = "login.microsoftonline.com";
                 $full_url = "https://login.microsoftonline.com/common/oauth2/v2.0/token";
@@ -1020,17 +1020,17 @@ class Mail
         // =?iso-2022-jp?B?GyRCIXlCaBsoQjEzMhskQjlmISEhViUsITwlRyVzGyhCJhskQiUoJS8lOSVGJWolIiFXQGxMZ0U5JE4kPyRhJE4jURsoQiYbJEIjQSU1JW0lcyEhIVo3bjQpJSglLyU5JUYlaiUiISYlbyE8JS8hWxsoQg==?=
         // and sometimes iconv_mime_decode() can't decode the subject.
         // So we are using both.
-        // 
+        //
         // We are trying iconv_mime_decode() first because imap_utf8()
         // decodes umlauts into two symbols:
         // https://github.com/freescout-helpdesk/freescout/issues/2965
 
         // Sometimes subject is split into parts and each part is base63 encoded.
         // And sometimes it's first encoded and after that split.
-        // https://github.com/freescout-helpdesk/freescout/issues/3066      
+        // https://github.com/freescout-helpdesk/freescout/issues/3066
 
         // Step 1. Abnormal way - text is encoded and split into parts.
-  
+
         // Only one type of encoding should be used.
         preg_match_all("/(=\?[^\?]+\?[BQ]\?)([^\?]+)(\?=)/i", $subject, $m);
         $encodings = $m[1] ?? [];
@@ -1057,7 +1057,7 @@ class Mail
                 if (!$has_equal_in_the_middle) {
                     $subject_decoded = iconv_mime_decode($joined_parts, ICONV_MIME_DECODE_CONTINUE_ON_ERROR, "UTF-8");
 
-                    if ($subject_decoded 
+                    if ($subject_decoded
                         && trim($subject_decoded) != trim($joined_parts)
                         && trim($subject_decoded) != trim(rtrim($joined_parts, '='))
                         && !self::isNotYetFullyDecoded($subject_decoded)
@@ -1069,7 +1069,7 @@ class Mail
                     // =?iso-2022-jp?B?IBskQiFaSEcyPDpuQ?= =?iso-2022-jp?B?C4wTU1qIVs3Mkp2JSIlLyU3JSItahsoQg==?=
                     $subject_decoded = \imap_utf8($joined_parts);
 
-                    if ($subject_decoded 
+                    if ($subject_decoded
                         && trim($subject_decoded) != trim($joined_parts)
                         && trim($subject_decoded) != trim(rtrim($joined_parts, '='))
                         && !self::isNotYetFullyDecoded($subject_decoded)
@@ -1147,7 +1147,7 @@ class Mail
 
         $client = \MailHelper::getMailboxClient($mailbox);
         $client->openFolder("INBOX");
-        
+
         return \Webklex\PHPIMAP\Message::make(null, null, $client, $raw_header, $raw_body, [], \Webklex\PHPIMAP\IMAP::ST_UID);
     }
 

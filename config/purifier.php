@@ -42,7 +42,7 @@ return [
                 'data' => true,
             ],
         ],
-        'test'    => [
+        'tests'    => [
             'Attr.EnableID' => 'true',
         ],
         'youtube' => [

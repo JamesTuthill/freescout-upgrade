@@ -105,7 +105,7 @@ return [
             'assets'        => ['path' => 'Resources/assets', 'generate' => true],
             'lang'          => ['path' => 'Resources/lang', 'generate' => true],
             'views'         => ['path' => 'Resources/views', 'generate' => true],
-            'test'          => ['path' => 'Tests', 'generate' => true],
+            'tests'          => ['path' => 'Tests', 'generate' => true],
             'repository'    => ['path' => 'Repositories', 'generate' => false],
             'event'         => ['path' => 'Events', 'generate' => false],
             'listener'      => ['path' => 'Listeners', 'generate' => false],

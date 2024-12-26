@@ -24,17 +24,17 @@ class Test extends Mailable
     public function build()
     {
         \MailHelper::prepareMailable($this);
-        
+
         $this->withSwiftMessage(function ($swiftmessage) {
             $headers = $swiftmessage->getHeaders();
-            $headers->addTextHeader('X-FreeScout-Mail-Type', 'test.mailbox');
+            $headers->addTextHeader('X-FreeScout-Mail-Type', 'tests.mailbox');
 
             return $swiftmessage;
         });
 
         $message = $this->subject(__(':app_name Test Email', ['app_name' => \Config::get('app.name')]));
         if ($this->mailbox) {
-            $message->view('emails/user/test', ['mailbox' => $this->mailbox]);
+            $message->view('emails/user/tests', ['mailbox' => $this->mailbox]);
         } else {
             $message->view('emails/user/test_system');
         }
